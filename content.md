@@ -39,22 +39,186 @@ class:center,middle
 
 ---
 
-# [Zoom Drill](https://vimeo.com/407215417)
+# A Few Ground Rules
 ???
-+ Facilitators will cover the following skills: muting themselves, stopping their video, typing in chat box, raising their hand, sharing their screen
++ Facilitators establish the intention we have for the culture of the classroom
 
 --
 
-+ Mute and Unmute your microphone
++ Be present (phone, email, social media, etc.)
 --
 
-+ Start and Stop your video
++ Be curious and ask questions
 --
 
-+ Post a message in the Chat window with your name and computer operating system (Windows or MacOS)
++ Step up, step back
 --
 
-+ Click the Participants window and Raise your hand 
++ One mic
+--
+
++ Respect multiple perspectives 
+--
+
++ Assume noble regard and positive intent
+
+
+---
+
+# Introductions
+In pairs, please share with your partner:
++ Your name
++ What you do
++ Your level of comfort with QGIS (1 - 10)
++ What you hope to get from class this week
+
+You'll be introducing your partner to the class (so take notes)
+
+---
+
+# Outline of Sessions This Week
+
+---
+
+# Assumptions
+--
+
++ You're all busy
+--
+
++ You're all mostly self-taught
+--
+
++ You're all motivated to learn how to better use QGIS
+--
+
++ You all know your data better than I could (and might want to take a break from it)
+
+---
+
+# Outcomes
+At the end of this week, you will:
+--
+
++ Demonstrate proficiency with foundational concepts in spatial analysis
+--
+
++ Understand the structure and purpose of a GIS
+--
+
++ Demonstrate proficiency in applying spatial concepts to real-world problems
+--
+
++ Be familiar with resources for further information on how to use QGIS for spatial analysis and mapmaking
+--
+
++ Be practiced using QGIS to accomplish more sophisticated spatial operations
+--
+
++ Understand the process for connecting and analyzing data in QGIS stored in a PostGIS spatial database using SQL
+--
+
++ Demonstrate understanding with key techniques in spatial analysis using SQL
+--
+
++ Be familiar with sources of technical information and support for using QGIS and PostGIS
+
+---
+
+# Topics for Today
+--
+
++ Basic operations in QGIS
+--
+
++ Essential GIS definitions and concepts
+--
+
++ Pro-tips for working with QGIS
+
+---
+# Getting Started
+
+loading basic data (Dallas council districts, Dallas 311, bike trails)
+
+styling data
+
+exporting data
+
+---
+
+# Your Turn
+peer mapping create a basic map with your data
+
+---
+
+name: a-block-end
+class:center,middle
+
+# Wrap-up
+
+---
+
+# 10 Minute Break
+
+---
+name: b-block-start
+class:center, middle
+
+# Welcome Back
+
+---
+
+basic gis concepts
+
+orientation to windows
+
+quick tips (pan, zoom, zoom to layer)
+
+---
+
+# Filter
+
+---
+
+# Select by Feature
+
+(select noise complaints)
+
+---
+
+# Select by Location 
+
+(select complaints in district)
+
+--- 
+
+# Your Turn
+
+---
+
+# Homework
+create and style a basic map with ERR data
+
+---
+
+# Wrap-up
+
+---
+
+# Looking Ahead
+
+---
+name: b-block-end
+class: center, middle
+
+# Thank you!
+
+--- 
+
+name: c-block-start
+class: center,middle
+# Welcome Back!
 
 ---
 
@@ -64,30 +228,275 @@ class:center,middle
 
 --
 
++ Be present (phone, email, social media, etc.)
+--
+
++ Be curious and ask questions
+--
+
 + Step up, step back
 --
 
 + One mic
 --
 
-+ Be curious and ask questions in the chat box
++ Respect multiple perspectives 
 --
 
 + Assume noble regard and positive intent
+
+---
+class:center, middle
+
+# Homework presentations
+
+---
+
+# Topics for Today
+--
+
++ Projections and why they're important
+--
+
++ Buffering and selecting features
+--
+
++ Spatial joins
+
+---
+
+# Projections
+
+---
+
+# Buffering and selecting features
+
+---
+
+# Your turn
+
+---
+name: c-block-end
+class: center,middle
+
+# Wrap-up
+
+---
+
+# 10-Minute Break
+
+---
+name: d-block-start
+class: center,middle
+
+# Welcome back
+
+---
+
+# Spatial Joins
+
+---
+
+# spatial join easy 
+???
+(join 311 to council districts)
+
+---
+
+# spatial join fail 
+???
+(something in Texas State plane)
+
+---
+# Your Turn
+???
+Putting it all together
+
+---
+
+# Homework
++ Create something that involves a spatial join
++ Show what you created and why you did it
++ Briefly describe how you did it
+
+---
+class:center,middle
+# Wrap-Up
+
+---
+
+# Looking Ahead
+
+---
+name: d-block-end
+class:center,middle
+# Thank you!
+
+---
+name: e-block-start
+class:center,middle
+
+# Welcome back!
+
+---
+
+# A Few Ground Rules
+???
++ Facilitators establish the intention we have for the culture of the classroom
+
+--
+
++ Be present (phone, email, social media, etc.)
+--
+
++ Be curious and ask questions
+--
+
++ Step up, step back
+--
+
++ One mic
 --
 
 + Respect multiple perspectives 
 --
 
++ Assume noble regard and positive intent
+
+---
+class:center, middle
+# Homework presentations
+
+---
+
+# creating and editing features
+
+---
+
+# Your turn
+
+---
+name: e-block-end
+class: center,middle
+# Wrap-Up
+
+---
+class:center,middle
+
+# 10-min Break
+
+---
+name: f-block-start
+class: center,middle
+# Welcome back!
+
+---
+
+# Valid geometries
+
+---
+
+# Checking for valid geometries
+
+---
+
+# Fixing valid geometries
+
+---
+
+# Your turn
++ fix invalid geometries in shapefile
+
+---
+
+# Homework
+
+---
+class:center,middle
+# Wrap-up
+---
+
+# Looking Ahead
+
+---
+name: f-block-end
+class: center,middle
+
+# Thank you!
+
+---
+
+name: g-block-start
+class: center,middle
+# Welcome back!
+
+---
+
+# A Few Ground Rules
+???
++ Facilitators establish the intention we have for the culture of the classroom
+
+--
+
 + Be present (phone, email, social media, etc.)
+--
+
++ Be curious and ask questions
+--
+
++ Step up, step back
+--
+
++ One mic
+--
+
++ Respect multiple perspectives 
+--
+
++ Assume noble regard and positive intent
+
+---
+class:center,middle
+# Homework presentations
 
 ---
 
-# Ground Rules
+# Topics for Today
+--
+
++ Georeferencing
+--
+
++ Your topics of interest
 
 ---
 
-# Introductions
+# Georeferencing
+
+---
+
+# Your Turn
+
+---
+name: g-block-end
+class:center,middle
+# Wrap-up
+
+--- 
+class:center,middle
+# 10-Minute Break
+
+---
+name: h-block-start
+class:middle,center
+
+# Welcome Back!
+
+---
+name: h-block-end
+class:center,middle
+
+# Wrap-up
 
 ---
 
@@ -95,7 +504,7 @@ class:center,middle
 
 ---
 
-# Final Thought
+# Final Thoughts
 
 ---
 
