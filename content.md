@@ -137,13 +137,27 @@ At the end of this week, you will:
 + Pro-tips for working with QGIS
 
 ---
-# Getting Started
+# Let's Get Started
+![img-center-100](images/qgis-blank.png)
 
-loading basic data (Dallas council districts, Dallas 311, bike trails)
+???
+Image of map we're going to create
 
-styling data
+---
 
-exporting data
+# Adding Data
+![img-center-100](images/qgis_add_vector_layer.png)
+???
+1. Add Dallas Council districts
+2. Add Dallas 311 
+3. Add DART lines
+
+---
+# Styling Data
+
+---
+
+# Exporting Data
 
 ---
 
@@ -159,7 +173,7 @@ class:center,middle
 
 ---
 
-# 10 Minute Break
+# 10-Minute Break
 
 ---
 name: b-block-start
