@@ -2,7 +2,7 @@ layout:true
 
 <div class="header">
   
-  <p class="header-text">Class Title</p>
+  <p class="header-text">QGIS for Working Professionals</p>
 </div>
 <div class="footer">
   <p class="footer-text">
@@ -28,7 +28,7 @@ class: center,middle
 
 #### See the code at: 
 
-<p class="license-text"><strong><strong>Class Title</strong></strong> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
+<p class="license-text"><strong><strong>QGIS for Working Professionals</strong></strong> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img style="border-width:0;width:8%" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 
@@ -139,27 +139,29 @@ class:center,middle
 + **Wednesday** - Creating and editing features, validating geometries
 --
 
-+ **Thursday** - Georeferencing and "Bonus" section
++ **Thursday** - Georeferencing and a "Bonus" section
 
 ---
 
 # Outcomes
+--
+
 At the end of this week, you will:
 --
 
-+ Demonstrate proficiency with foundational concepts in spatial analysis
++ Understand foundational GIS concepts
 --
 
-+ Understand the structure and purpose of a GIS
++ Understand the purpose and functionality of a GIS
 --
 
-+ Be practiced using QGIS to accomplish simple and sophisticated spatial operations
++ Be practiced using QGIS for a variety of spatial operations
 --
 
-+ Demonstrate proficiency in applying spatial concepts to real-world problems
++ Demonstrate proficiency in applying GIS concepts to real-world problems
 --
 
-+ Be familiar with resources for further information on how to use QGIS for spatial analysis and mapmaking
++ Be familiar with key resources for further information on using QGIS
 
 ---
 
@@ -176,6 +178,8 @@ At the end of this week, you will:
 
 ---
 # Let's Get Started
+
+
 ![img-center-100](images/qgis-blank.png)
 
 ???
