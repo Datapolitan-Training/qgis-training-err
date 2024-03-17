@@ -76,10 +76,6 @@ You'll be introducing your partner to the class (so take notes)
 
 ---
 
-# Outline of Sessions This Week
-
----
-
 # Assumptions
 --
 
@@ -95,6 +91,57 @@ You'll be introducing your partner to the class (so take notes)
 + You all know your data better than I could (and might want to take a break from it)
 
 ---
+class:center,middle
+
+# How We're Going to Do This
+
+---
+# How I Teach
+--
+
++ Minimal lecture
+--
+
++ Demonstrate a concept/technique with open data
+--
+
++ Learn by doing -> I'll guide you along the way
+
+---
+# How our Days Are Going to Go
+--
+
++ 2 85-minute sessions
+--
+
++ 10-minute break in between
+--
+
++ "Your turn" towards end of each block
+--
+
++ "Peer Mapping" -> work in pairs with one person driving
+--
+
++ "Homework" -> a 10-15 minute task to demo the next day
+
+---
+
+# How the Week is going to look
+--
+
++ **Monday** - Introduction to QGIS, loading data, filtering, and selecting
+--
+
++ **Tuesday** - Projections, buffering features, spatial joins
+--
+
++ **Wednesday** - Creating and editing features, validating geometries
+--
+
++ **Thursday** - Georeferencing and "Bonus" section
+
+---
 
 # Outcomes
 At the end of this week, you will:
@@ -106,29 +153,20 @@ At the end of this week, you will:
 + Understand the structure and purpose of a GIS
 --
 
++ Be practiced using QGIS to accomplish simple and sophisticated spatial operations
+--
+
 + Demonstrate proficiency in applying spatial concepts to real-world problems
 --
 
 + Be familiar with resources for further information on how to use QGIS for spatial analysis and mapmaking
---
-
-+ Be practiced using QGIS to accomplish more sophisticated spatial operations
---
-
-+ Understand the process for connecting and analyzing data in QGIS stored in a PostGIS spatial database using SQL
---
-
-+ Demonstrate understanding with key techniques in spatial analysis using SQL
---
-
-+ Be familiar with sources of technical information and support for using QGIS and PostGIS
 
 ---
 
 # Topics for Today
 --
 
-+ Basic operations in QGIS
++ Basic operations in QGIS (loading, styling, filtering, and exporting data)
 --
 
 + Essential GIS definitions and concepts
