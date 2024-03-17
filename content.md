@@ -294,6 +294,7 @@ Image of map we're going to create
 
 
 ![img-center-85](images/qgis-cd-5.png)
+
 ---
 
 # Styling Features
@@ -651,7 +652,197 @@ class:center,middle
 ![img-center-90](images/DOT_311_2.png)
 
 ---
-        
+
+class:center,middle
+# What did we just do?
+
+---
+
+class:center,middle
+# Some Basic Concepts
+
+---
+
+# Geographic Info System (GIS)
+--
+
+> Any system for capturing, storing, checking, and displaying data related to positions on the Earth's surface
+
+### [National Geographic Education Encyclopedia](https://www.nationalgeographic.org/encyclopedia/geographic-information-system-gis/)
+
+---
+
+# Or more simply
+
+> In a GIS, you connect _**data**_ with _**geography**_.
+
+### [GISgeography.com](http://gisgeography.com/what-gis-geographic-information-systems/)
+
+---
+
+# Geographic Info Systems (GIS)
+--
+
++ Create interactive queries (user-created searches)
+--
+
++ Analyze spatial information
+--
+
++ Edit data in maps
+--
+
++ Present the results of all these operations
+
+---
+
+class:center,middle
+# Some More Key Concepts
+
+---
+
+# Layers
+![img-center-60](images/gis-layers.jpg)
+#### Image Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Visual_Representation_of_Themes_in_a_GIS.jpg)
+
+---
+
+# Basic Map Using QGIS
+![img-center-75](images/disd_elementary.png)
+
+---
+
+# Points  
+[![img-left-30](images/point_feature.png)](http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview)
+
+--
+
+![img-right-70](images/disd_elementary.png)
+
+---
+
+# Lines
+[![img-left-30](images/polyline_feature.png)](http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview)
+
+--
+
+![img-right-70](images/disd_elementary.png)
+
+---
+
+# Polygons
+[![img-left-30](images/polygon_feature.png)](http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview)
+
+--
+
+![img-right-70](images/disd_elementary.png)
+
+---
+
+# QGIS Pro-tip
+![img-right-40](images/qgis-project-save.png)
++ Save your project
+--
+
++ .red[QGIS doesn't autosave]
+--
+
++ .red[You will lose work when it crashes]
+--
+
+
+![img-left-50](https://media.giphy.com/media/obbIystETz0Xu/giphy.gif)
+
+
+
+---
+
+class: center, middle
+# What is our Map missing?
+
+![img-center-90](images/qgis-cd-styled.PNG)
+
+---
+
+exclude:true
+# Base Maps
+![img-center-60](images/gis-layers.jpg)
+####Image Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Visual_Representation_of_Themes_in_a_GIS.jpg)
+
+---
+
+# Base Maps
+![img-center-70](images/disd_elementary.png)
+
+---
+
+# Base Maps
+
++ Adding base maps will give your map context
+--
+
++ In QGIS, you need a plugin to use base maps
+--
+
++ There are several, but we're only going to use one of them
+
+---
+
+# Loading Base Maps in QGIS
++ From the Plugins menu, select "Manage and Install Plugins"
+
+![img-center-90](images/qgis-plugins-0.png)
+
+---
+
+# Loading Base Maps in QGIS
+
++ Search for the QuickMapServices plugin and install it
+
+![img-center-90](images/qgis-plugins-1.png)
+
+---
+
+# Setting Up QuickMapServices
++ Go to the Settings Menu
+![img-center-80](images/qgis-qms-0.png)
+
+---
+
+# Setting Up QuickMapServices
+
++ Get the contributed packs
+
+![img-center-70](images/qgis-qms-1.png)
+
+---
+
+# Setting Up QuickMapServices
+
++ Revel in all the beautiful base maps
+
+![img-left-45](https://media.giphy.com/media/3og0IuE1EjI5ZQzr3i/giphy.gif)
+![img-center-45](images/qgis-qms-2.png)
+
+---
+
+class:center,middle
+# Raise Your Hand When You Have All the Basemaps
+
+---
+
+# Loading Base Maps in QGIS
++ Take a moment and select the base map you want to use
+
+![img-center-100](images/qgis-qms-3.png)
+
+---
+
+# Loading Base Maps in QGIS
+![img-center-90](images/qgis-cd-basemap.PNG)
+
+---
+       
 # Layer Ordering
 --
 
@@ -764,6 +955,10 @@ class:center,middle
 
 
 quick tips (pan, zoom, zoom to layer)
+
+---
+
+# Panels and Toolbars
 
 ---
 
