@@ -143,16 +143,16 @@ class:center,middle
 # How the Week is going to look
 --
 
-+ **Monday** - Introduction to QGIS, loading data, filtering, and selecting
++ .orange[Monday] - Introduction to QGIS, loading data, filtering, and selecting
 --
 
-+ **Tuesday** - Projections, buffering features, spatial joins
++ .orange[Tuesday] - Projections, buffering features, spatial joins
 --
 
-+ **Wednesday** - Creating and editing features, validating geometries
++ .orange[Wednesday] - Creating and editing features, validating geometries
 --
 
-+ **Thursday** - Georeferencing and a "Bonus" section
++ .orange[Thursday] - Georeferencing and a "Bonus" section
 
 ---
 
@@ -208,7 +208,7 @@ At the end of this week, you will:
 
 ![img-center-65](images/dallas_cd_map.png)
 
-## Download this data and unzip the file
+## [Download this data](data/dallas_council_districts.zip) and [unzip the file](https://www.filecenter.com/blog/how-to-unzip-files-mac-iphone-android-windows/)
 
 ???
 Image of map we're going to create
@@ -238,7 +238,7 @@ Image of map we're going to create
 ![img-center-50](images/add_vector_dallas_cd.png)
 --
 
-+ Select .blue[Open]
++ Select .orange[**Open**]
 
 ---
 
@@ -246,10 +246,10 @@ Image of map we're going to create
 ![img-center-75](images/add_vector_dallas_cd2.png)
 --
 
-+ Select Add to add the data
++ Select .orange[**Add**] to add the data
 --
 
-+ Select Close
++ Select .orange[**Close**]
 
 ---
 
@@ -282,17 +282,17 @@ Image of map we're going to create
 # Styling Features
 --
 
-+ Right click the layer and select "Properties"
++ Right click the layer and select .orange[**Properties**]
 
-![img-center-80](images/qgis-cd-4.png)
+![img-center-75](images/qgis-cd-4.png)
 
 ---
 
 # Styling Features
-+ In the Layer Properties window, click the "Symbology" tab
++ In the Layer Properties window, click the .orange[**Symbology**] tab
 --
 
-+ Click the "Single Symbol" and select "Categorized" from the drop-down menu
++ Click the .orange[**Single Symbol**] and select .orange[**Categorized**] from the drop-down menu
 --
 
 
@@ -301,10 +301,10 @@ Image of map we're going to create
 ---
 
 # Styling Features
-+ In the "Value" field, select the column that has the data you want to style
++ In the .orange[**Value**] field, select the column that has the data you want to style
 --
 
-+ In our case, this is the "district" column
++ In our case, this is the .orange[**district**] column
 --
 
 
@@ -313,11 +313,11 @@ Image of map we're going to create
 ---
 
 # Styling Features
-+ Then click "Classify" (bottom left)
++ Then click .orange[**Classify**] (bottom left)
 --
 
 
-![img-center-65](images/qgis-cd-7_rev.png)
+![img-center-65](images/qgis-cd-7_rev_box.png)
 --
 
 + This should give each unique value in the column its own color
@@ -325,7 +325,7 @@ Image of map we're going to create
 ---
 
 # Styling Features
-+ Click "Ok" (or "Apply" to preview)
++ Click .orange[**OK**] (or .orange[**Apply**] to preview)
 
 ![img-center-85](images/qgis-cd-8_rev.png)
 
@@ -339,10 +339,10 @@ class:center,middle
 # Add labels to data
 --
 
-+ In the Layer Properties window click the Labels tab
++ In the Layer Properties window click the .orange[**Labels**] tab
 --
 
-+ Select "Single labels"
++ Select .orange[**Single labels**]
 
 ![img-center-95](images/qgis-cd-9.png)
 
@@ -365,32 +365,12 @@ class:center,middle
 # Add labels to data
 ![img-center-90](images/qgis-cd-11.png)
 
---
-
-class:center,middle
-# Let's add another layer
-
----
-
-# Dallas 311 Service Requests
-+ [Download the data](data/dot-311/20160201_20160207_DOT_311_ServiceRequests.zip) to your desktop
-+ Unzip the file
-+ Open in QGIS
-
-![img-center-60](images/DOT_311_1.png)
-
----
-
-# Dallas 311 Service Requests
-
-![img-center-90](images/DOT_311_2.png)
-
 ---
 
 class: center, middle
 # What is our Map missing?
 
-![img-center-90](images/qgis-cd-styled.PNG)
+![img-center-85](images/dallas_cd_map.png)
 
 ---
 
@@ -400,7 +380,7 @@ exclude:true
 ####Image Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Visual_Representation_of_Themes_in_a_GIS.jpg)
 
 ---
-
+exclude:true
 # Base Maps
 ![img-center-70](images/disd_elementary.png)
 
@@ -408,18 +388,18 @@ exclude:true
 
 # Base Maps
 
-+ Adding base maps will give your map context
++ Give maps context (roads, topographical features, landmarks, etc.)
 --
 
 + In QGIS, you need a plugin to use base maps
 --
 
-+ There are several, but we're only going to use one of them
++ There are <a href="https://plugins.qgis.org/plugins/tags/basemap/?sort=-downloads" target=_blank>several</a>, but we're only going to use the most popular
 
 ---
 
 # Loading Base Maps in QGIS
-+ From the Plugins menu, select "Manage and Install Plugins"
++ From the Plugins menu, select .orange[**Manage and Install Plugins**]
 
 ![img-center-90](images/qgis-plugins-0.png)
 
@@ -427,14 +407,14 @@ exclude:true
 
 # Loading Base Maps in QGIS
 
-+ Search for the QuickMapServices plugin and install it
++ Search for the .orange[QuickMapServices plugin] and install it
 
 ![img-center-90](images/qgis-plugins-1.png)
 
 ---
 
 # Setting Up QuickMapServices
-+ Go to the Settings Menu
++ Go to the .orange[Settings] menu
 ![img-center-80](images/qgis-qms-0.png)
 
 ---
@@ -474,6 +454,8 @@ class:center,middle
 ---
 
 # QGIS Pro-tip
+--
+
 ![img-right-40](images/qgis-project-save.png)
 + Save your project
 --
@@ -514,7 +496,8 @@ class:center
 # 10-Minute Break
 ![img-center-50](images/sadtopographies/unfortunate_cove.png)
 
-#### Source: https://www.instagram.com/sadtopographies/
+#### Source: https://www.instagram.com/p/BmSmGcxhGGT/
+
 ---
 name: b-block-start
 class:center, middle
@@ -625,10 +608,10 @@ class:center,middle
 ![img-center-75](images/dallas_cd_file_structure.png)
 --
 
-+ .shp—The main file that stores the feature geometry
++ .orange[.shp]—The main file that stores the feature geometry
 --
 
-+ .dbf—The dBASE table that stores the attribute information of features
++ .orange[.dbf]—The dBASE table that stores the attribute information of features
 
 ---
 
@@ -636,20 +619,20 @@ class:center,middle
 
 ![img-center-75](images/dallas_cd_file_structure.png)
 
-+ .prj—The file that stores the coordinate system information
++ .orange[.prj]—The file that stores the coordinate system information
 --
 
-+ .shx—The index file that stores the index of the feature geometry
++ .orange[.shx]—The index file that stores the index of the feature geometry
 
 ---
 
 # You might also see
 --
 
-+ .cpg—Identifies the character set to be used
++ .orange[.cpg]—Identifies the character set to be used
 --
 
-+ .sbn and .sbx—The files that store the spatial index of the features
++ .orange[.sbn] and .orange[.sbx]—The files that store the spatial index of the features
 
 ---
 
@@ -696,6 +679,56 @@ class:center,middle
 
 ---
 
+class:center,middle
+# Let's add another layer
+
+---
+
+# What is a CSV file?
+--
+
+![img](images/csv1.png)
+
+---
+
+# What is a CSV file?
+![img-center-90](images/csv2.png)
+
+---
+
+# Dallas 311 Service Requests
++ [Download the data](data/20240101_20240229_dallas_311.csv) to your desktop
+
+![img-center-70](images/dallas_cd_311_basemap.png)
+
+---
+
+# Adding CSV Data
+![img-center-60](images/add_csv1.png)
+
+---
+
+![img-center-60](images/add_csv2_box.png)
+
+--
+
+
+![img-center-60](images/dallas_311_add_csv.png)
+
+---
+
+# Adding CSV Data
++ Make sure it found the .orange[latitude] and .orange[longitude] fields
+
+![img-center-75](images/dallas_311_add_csv4_box.png)
+
+---
+
+# Adding CSV Data
+![img-center-85](images/dallas_cd_311_basemap.png)
+
+---
+
 # Layers
 ![img-center-60](images/gis-layers.jpg)
 #### Image Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Visual_Representation_of_Themes_in_a_GIS.jpg)
@@ -712,40 +745,51 @@ class:center,middle
 --
 
 + Try it now
+
 ---
 
 # Filter and Query
 + We can filter the points based on the values in the attribute table
 
----
-
-# Filter and Query
-+ Right-click on the layer and select "Filter" to open the Query Builder
-
-![img-center-90](images/filtering_data.png)
+![img-center-90](images/dallas_311_attribute_table.png)
 
 
 ---
 
 # Filter and Query
-![img-center-60](images/filter1.png)
++ Right-click on the layer and select .orange[Filter] to open the Query Builder
 
----
-
-# Filter and Query
-![img-left-60](images/filter2.png)
+![img-left-40](images/dallas_311_filter1.png)
 --
-![img-right-35](images/filter3.png)
+![img-right-50](images/dallas_311_filter2.png)
+
 
 ---
 
 # Filter and Query
-![img-center-60](images/filter4.png)
++ Filter using the .orange[Service Request Type] field
++ Select .orange[All] under .orange[Values]
+
+![img-left-48](images/dallas_311_filter3a_box.png)
+![img-right-48](images/dallas_311_filter3b.png)
+
 
 ---
 
 # Filter and Query
-![img-center-90](images/filter5.png)
+![img-left-60](images/dallas_311_filter4.png)
+--
+![img-right-35](images/dallas_311_filter5.png)
+
+---
+
+# Filter and Query
+![img-center-60](images/dallas_311_filter6.png)
+
+---
+
+# Filter and Query
+![img-center-80](images/dallas_311_filter7.png)
 
 ---
 
@@ -755,36 +799,172 @@ class:center,middle
 ---
 
 # Multiple Conditions
-![img-left-60](images/filter6_box.png)
+![img-left-60](images/dallas_311_filter8_box.png)
 --
-![img-right-35](images/filter7.png)
+![img-right-35](images/dallas_311_filter9.png)
 
 ---
 
 # Multiple Conditions
-![img-center-90](images/filter8.png)
+![img-center-80](images/dallas_311_filter10.png)
 
 ---
 
 # Select by Feature
+--
+
++ Sometimes we don't want to filter, but just select based on attributes
+--
+
++ We do this in the .orange[Attribute Table] (right click the layer and open)
+--
+
++ Click on the icon in the top left with the backward 3
+--
+
+
+![img-center-100](images/dallas_311_sbf1_box.png)
+
 ???
 (select noise complaints)
 
 ---
 
-# Select by Location 
+# Select by Feature
+--
+
++ This will allow you to select by expression
+--
+
++ Select the .orange[Fields and Values]
+--
+
++ Select .orange[Service Request Type]
+--
+
+![img-left-48](images/dallas_311_sbf2_box.png)
+![img-right-48](images/dallas_311_sbf3_box.png)
+
+---
+
+# Select by Feature
+--
+
++ Add an .orange[=] sign to the expression
+--
+
++ Filter the values for .orange[Noise]
+--
+
++ Select .orange[Chronic Noise Complaint - DPD]
+--
+
+![img-left-48](images/dallas_311_sbf4.png)
+![img-right-48](images/dallas_311_sbf5b.png)
+
+--
+
+
+![img-center-50](images/dallas_311_sbf6.png)
+
+---
+
+# Select by Feature
+--
+
++ Click .orange[Select Features]
+--
+
++ Check the top Attribute Table for the filtered row count
+![img-center-100](images/dallas_311_sbf7_box.png)
+--
+
++ Filter to .orange[Show Selected Features]
+![img-center-60](images/dallas_311_sbf8.png)
+
+---
+
+# Select by Feature
++ The yellow dots are the selected features
+
+![img-center-75](images/dallas_311_sbf10.png)
+
+
+---
+# Select by Location
+--
+
++ Sometimes we want to select based on where the feature is on the map
+--
+
++ This helps when the spatial location isn't an attribute
+--
+
++ It also helps verify the attribute is accurate
+--
+
++ Let's practice this
+
+---
+
+# Select by Location
+--
+
++ Select a council district from the .orange[Councils] layer
+--
+
++ Go to .orange[Vector] -> .orange[Research Tools] -> .orange[Select by Location]
+
+![img-center-50](images/dallas_311_sbl1.png)
 ???
 (select complaints in district)
 
 ---
+# Select by Location
++ Add the parameters for the select
+![img-center-100](images/dallas_311_sbl2_box.png)
 
-# Zoom to Layer
-![img-center-60](images/ztl1.png)
+---
+# Select by Location
++ Turns out the feature isn't accurate
+
+![img-center-100](images/dallas_311_sbl3_box.png)
+
+---
+
+# Exporting Data
+--
+
++ Once we have a selection that we like, we can export it as it's own layer
+--
+
++ Right-click on the layer
+--
+
++ Select .orange[Export] -> .orange[Save Selected Features As...]
+![img-center-50](images/dallas_311_export1.png)
+
+---
+
+# Exporting Data
+--
+
++ Name the file and click .orange[OK]
+--
+
+
+![img-center-50](images/dallas_311_export2.png)
+
+
+---
+class:center,middle
+
+# Some other useful functions
 
 ---
 
 # Zoom to Layer
-![img-center-90](images/ztl2.png)
+![img-center-60](images/dallas_311_ztl1.png)
 
 ---
 
@@ -813,28 +993,66 @@ class:center,middle
 ![img-center-30](images/hand.png)
 
 
-quick tips (pan, zoom, zoom to layer)
-
 ---
 
-# Panels and Toolbars
-
----
-
-# Exporting Data
-![img-left-35](images/export1.png)
+# Toolbars
+![img-right-30](images/qgis_toolbars.png)
 --
-![img-right-50](images/export2_box.png)
+
++ Set of quick icons you can place on your window
+--
+
++ You can adjust which ones are visible and where they are
+--
+
++ They are great if you like to work using icons
+
+---
+
+# Panels
+![img-right-30](images/qgis_panels.png)
+--
+
++ Panels are panes to your desktop window
+--
+
++ Good for quickly accessing information
+--
+
++ Depends on how cluttered you want your window to be
+--
+
++ [See the documentation](https://docs.qgis.org/2.18/en/docs/user_manual/introduction/qgis_gui.html#panels) for more information
 
 
---- 
+---
 
 # Your Turn
+--
+
++ Working in your pairs, select a dataset (maybe `active rigs`)
+--
+
++ Select points by both feature and location
+--
+
++ See if they agree or if there's a discrepancy
 
 ---
 
 # Homework
-create and style a basic map with ERR data
+--
+
++ Create and style a basic map with data from the database
+--
+
++ Play around with the styles and labels
+--
+
++ Have fun and explore features
+--
+
++ You can show the live map or export it to a PNG to demo
 
 ---
 class:center,middle
@@ -865,314 +1083,4 @@ class:center,middle
 
 # Lab Time 
 
----
-
-name: c-block-start
-class: center,middle
-# Welcome Back!
-
----
-
-# A Few Ground Rules
-???
-+ Facilitators establish the intention we have for the culture of the classroom
-
---
-
-+ Be present (phone, email, social media, etc.)
---
-
-+ Be curious and ask questions
---
-
-+ Step up, step back
---
-
-+ One mic
---
-
-+ Respect multiple perspectives 
---
-
-+ Assume noble regard and positive intent
-
----
-class:center, middle
-
-# Homework presentations
-
----
-
-# Topics for Today
---
-
-+ Projections and why they're important
---
-
-+ Buffering and selecting features
---
-
-+ Spatial joins
-
----
-
-# Projections
-
----
-
-# Buffering and selecting features
-
----
-
-# Your turn
-
----
-name: c-block-end
-class: center,middle
-
-# Wrap-up
-
----
-
-# 10-Minute Break
-
----
-name: d-block-start
-class: center,middle
-
-# Welcome back
-
----
-
-# Spatial Joins
-
----
-
-# spatial join easy 
-???
-(join 311 to council districts)
-
----
-
-# spatial join fail 
-???
-(something in Texas State plane)
-
----
-# Your Turn
-???
-Putting it all together
-
----
-
-# Homework
-+ Create something that involves a spatial join
-+ Show what you created and why you did it
-+ Briefly describe how you did it
-
----
-class:center,middle
-# Wrap-Up
-
----
-
-# Looking Ahead
-
----
-name: d-block-end
-class:center,middle
-# Thank you!
-
----
-class:center,middle
-
-# Lab Time 
-
----
-name: e-block-start
-class:center,middle
-
-# Welcome back!
-
----
-
-# A Few Ground Rules
-???
-+ Facilitators establish the intention we have for the culture of the classroom
-
---
-
-+ Be present (phone, email, social media, etc.)
---
-
-+ Be curious and ask questions
---
-
-+ Step up, step back
---
-
-+ One mic
---
-
-+ Respect multiple perspectives 
---
-
-+ Assume noble regard and positive intent
-
----
-class:center, middle
-# Homework presentations
-
----
-
-# creating and editing features
-
----
-
-# Your turn
-
----
-name: e-block-end
-class: center,middle
-# Wrap-Up
-
----
-class:center,middle
-
-# 10-min Break
-
----
-name: f-block-start
-class: center,middle
-# Welcome back!
-
----
-
-# Valid geometries
-
----
-
-# Checking for valid geometries
-
----
-
-# Fixing valid geometries
-
----
-
-# Your turn
-+ fix invalid geometries in shapefile
-
----
-
-# Homework
-
----
-class:center,middle
-# Wrap-up
----
-
-# Looking Ahead
-
----
-name: f-block-end
-class: center,middle
-
-# Thank you!
-
----
-
-name: g-block-start
-class: center,middle
-# Welcome back!
-
----
-
-# A Few Ground Rules
-???
-+ Facilitators establish the intention we have for the culture of the classroom
-
---
-
-+ Be present (phone, email, social media, etc.)
---
-
-+ Be curious and ask questions
---
-
-+ Step up, step back
---
-
-+ One mic
---
-
-+ Respect multiple perspectives 
---
-
-+ Assume noble regard and positive intent
-
----
-class:center,middle
-# Homework presentations
-
----
-
-# Topics for Today
---
-
-+ Georeferencing
---
-
-+ Your topics of interest
-
----
-
-# Georeferencing
-
----
-
-# Your Turn
-
----
-name: g-block-end
-class:center,middle
-# Wrap-up
-
---- 
-class:center,middle
-# 10-Minute Break
-
----
-name: h-block-start
-class:middle,center
-
-# Welcome Back!
-
----
-name: h-block-end
-class:center,middle
-
-# Wrap-up
-
----
-
-# Resources
-
----
-
-# Final Thoughts
-
----
-
-# Contact Information
-+ [Email me](mailto:richard[at]datapolitan[dot]com)
-+ Check out [my website](https://wwww.datapolitan.com)
-+ Connect on [Twitter](https://twitter.com/Datapolitan)
-+ Connect on [LinkedIn](https://www.linkedin.com/in/richarddunks/)
-+ Follow us on [Instagram](https://www.instagram.com/datapolitan/)
-
----
-
-class:middle,center
-# Thank You!
 
