@@ -24,7 +24,7 @@ class: center,middle
 
 ## Facilitator: Richard Dunks
 
-### Follow along at: 
+### Follow along at: https://bit.ly/qgis-working-pro
 
 #### See the code at: https://bit.ly/qgis-working-pro-code
 
