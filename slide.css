@@ -424,7 +424,8 @@ pre {
   color: yellow;
 }
 .orange {
-  color: orange;
+  color: #e77b4e;
+  font-weight: bold;
 }
 .green {
   color: green;
