@@ -1060,6 +1060,42 @@ class:center,middle
 
 ---
 
+class:center,middle
+# Good Resources for Further Information
+
+---
+
+# GIS Stack Exchange
+
+![img-center-90](images/gis-stackexchange.png)
+
+[GIS Stack Exchange](http://gis.stackexchange.com/)
+
+---
+
+# Learning QGIS
+
+![img-center-40](images/learning-qgis.png)
+
+[Learning QGIS](https://www.packtpub.com/application-development/learning-qgis-20)
+
+---
+
+# QGIS Map Design
+
+![img-center-40](images/qgis-map-design.png)
+
+[QGIS Map Design](https://locatepress.com/book/qmd2)
+
+---
+
+# Other Documentation
++ [QGIS online manual Gentle GIS Introduction](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/)
++ [QGIS Tutorials and Tips](https://www.qgistutorials.com/en/index.html)
++ [Free and Open Source GIS Ramblings](https://anitagraser.com/)
+
+---
+
 # Looking Ahead
 --
 
