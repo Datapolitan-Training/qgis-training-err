@@ -26,7 +26,7 @@ class: center,middle
 
 ### Follow along at: 
 
-#### See the code at: 
+#### See the code at: https://bit.ly/qgis-working-pro-code
 
 <p class="license-text"><strong><strong>QGIS for Working Professionals</strong></strong> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
 
