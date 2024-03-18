@@ -18,7 +18,7 @@ class: center,middle
 
 ![img-center-50](images/datapolitan-logo-01.svg)
 
-# Class Title
+# QGIS for Working Professionals
 
 - - -
 
@@ -96,6 +96,7 @@ class:center,middle
 # How We're Going to Do This
 
 ---
+
 # How I Teach
 --
 
@@ -202,6 +203,7 @@ At the end of this week, you will:
 + Pro-tips for working with QGIS
 
 ---
+
 # Let's Get Started
 
 ![img-center-65](images/dallas_cd_map.png)
@@ -222,6 +224,7 @@ Image of map we're going to create
 ![img-center-90](images/qgis_add_vector_layer.png)
 ???
 1. Add Dallas Council districts
+
 ---
 
 # Adding Data
@@ -362,24 +365,161 @@ class:center,middle
 # Add labels to data
 ![img-center-90](images/qgis-cd-11.png)
 
+--
+
+class:center,middle
+# Let's add another layer
+
 ---
 
-# Your turn
+# Dallas 311 Service Requests
++ [Download the data](data/dot-311/20160201_20160207_DOT_311_ServiceRequests.zip) to your desktop
++ Unzip the file
++ Open in QGIS
+
+![img-center-60](images/DOT_311_1.png)
+
+---
+
+# Dallas 311 Service Requests
+
+![img-center-90](images/DOT_311_2.png)
+
+---
+
+class: center, middle
+# What is our Map missing?
+
+![img-center-90](images/qgis-cd-styled.PNG)
+
+---
+
+exclude:true
+# Base Maps
+![img-center-60](images/gis-layers.jpg)
+####Image Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Visual_Representation_of_Themes_in_a_GIS.jpg)
+
+---
+
+# Base Maps
+![img-center-70](images/disd_elementary.png)
+
+---
+
+# Base Maps
+
++ Adding base maps will give your map context
 --
 
-Find a colleague to work with. One of you will "drive" while the other helps.
++ In QGIS, you need a plugin to use base maps
 --
 
-+ Style the polygons however you'd like
++ There are several, but we're only going to use one of them
+
+---
+
+# Loading Base Maps in QGIS
++ From the Plugins menu, select "Manage and Install Plugins"
+
+![img-center-90](images/qgis-plugins-0.png)
+
+---
+
+# Loading Base Maps in QGIS
+
++ Search for the QuickMapServices plugin and install it
+
+![img-center-90](images/qgis-plugins-1.png)
+
+---
+
+# Setting Up QuickMapServices
++ Go to the Settings Menu
+![img-center-80](images/qgis-qms-0.png)
+
+---
+
+# Setting Up QuickMapServices
+
++ Get the contributed packs
+
+![img-center-70](images/qgis-qms-1.png)
+
+---
+
+# Setting Up QuickMapServices
+
++ Revel in all the beautiful base maps
+
+![img-left-45](https://media.giphy.com/media/3og0IuE1EjI5ZQzr3i/giphy.gif)
+![img-center-45](images/qgis-qms-2.png)
+
+---
+exclude:true
+class:center,middle
+# Raise Your Hand When You Have All the Basemaps
+
+---
+
+# Loading Base Maps in QGIS
++ Take a moment and select the base map you want to use
+
+![img-center-100](images/qgis-qms-3.png)
+
+---
+
+# Loading Base Maps in QGIS
+![img-center-90](images/qgis-cd-basemap.PNG)
+
+---
+
+# QGIS Pro-tip
+![img-right-40](images/qgis-project-save.png)
++ Save your project
 --
 
-+ Change the outline color or add a pattern
++ .red[QGIS doesn't autosave]
 --
 
-+ Style the labels
++ .red[You will lose work when it crashes]
 --
 
-+ Change the font, the font size, or other attributes (location)
+
+![img-left-50](https://media.giphy.com/media/obbIystETz0Xu/giphy.gif)
+
+
+---
+
+# Your Turn
+Working with a peer, come up with a basic map with one data layer.
+--
+
++ Think about styling and labeling
+--
+
++ Be ready to show the group
+--
+
++ Feel free to get creative with what you show
+
+---
+
+name: a-block-end
+class:center,middle
+
+# Wrap-up
+
+---
+class:center
+# 10-Minute Break
+![img-center-50](images/sadtopographies/unfortunate_cove.png)
+
+#### Source: https://www.instagram.com/sadtopographies/
+---
+name: b-block-start
+class:center, middle
+
+# Welcome Back
 
 ---
 
@@ -431,14 +571,8 @@ class:center,middle
 
 ---
 
-# Layers
-![img-center-60](images/gis-layers.jpg)
-#### Image Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Visual_Representation_of_Themes_in_a_GIS.jpg)
-
----
-
 # Basic Map Using QGIS
-![img-center-70](images/disd_elementary.png)
+![img-center-75](images/disd_elementary.png)
 
 ---
 
@@ -544,160 +678,21 @@ class:center,middle
 
 ![img-center-100](images/shapefile-column-names.png)
 
-
 ---
 
-# QGIS Pro-tip
-![img-right-40](images/qgis-project-save.png)
-+ Save your project
+# Other File Formats
 --
 
-+ .red[QGIS doesn't autosave]
++ CSV files
 --
 
-+ .red[You will lose work when it crashes]
++ GeoJSON
 --
 
-
-![img-left-50](https://media.giphy.com/media/obbIystETz0Xu/giphy.gif)
-
-
-
----
-
-# Your Turn
-Working with a peer, come up with a basic map with one data layer.
++ GeoTIFF/GeoPDF
 --
 
-+ Think about styling and labeling
---
-
-+ Be ready to show the group
---
-
-+ Feel free to get creative with what you show
-
----
-
-name: a-block-end
-class:center,middle
-
-# Wrap-up
-
----
-class:center
-# 10-Minute Break
-![img-center-50](images/sadtopographies/unfortunate_cove.png)
-
-#### Source: https://www.instagram.com/sadtopographies/
----
-name: b-block-start
-class:center, middle
-
-# Welcome Back
-
----
-
-class:center,middle
-# Let's add another layer
-
----
-
-# What is a CSV file?
---
-
-![img](images/csv1.png)
-
----
-
-# What is a CSV file?
-![img-center-90](images/csv2.png)
-
----
-
-# Adding CSV Data
-![img](images/add_csv1.png)
-
----
-
-![img-center-60](images/add_csv2_box.png)
-
---
-
-![img-center-55](images/add_csv3.png)
-
----
-
-# Adding CSV Data
-![img](images/add_csv4_box.png)
-
----
-
-# Adding CSV Data
-![img](images/add_csv5.png)
-
----
-
-# Dallas 311 Service Requests
-+ [Download the data](data/dot-311/20160201_20160207_DOT_311_ServiceRequests.zip) to your desktop
-+ Unzip the file
-+ Open in QGIS
-
-![img-center-60](images/DOT_311_1.png)
-
----
-
-# Dallas 311 Service Requests
-
-![img-center-90](images/DOT_311_2.png)
-
----
-
-class:center,middle
-# What did we just do?
-
----
-
-class:center,middle
-# Some Basic Concepts
-
----
-
-# Geographic Info System (GIS)
---
-
-> Any system for capturing, storing, checking, and displaying data related to positions on the Earth's surface
-
-### [National Geographic Education Encyclopedia](https://www.nationalgeographic.org/encyclopedia/geographic-information-system-gis/)
-
----
-
-# Or more simply
-
-> In a GIS, you connect _**data**_ with _**geography**_.
-
-### [GISgeography.com](http://gisgeography.com/what-gis-geographic-information-systems/)
-
----
-
-# Geographic Info Systems (GIS)
---
-
-+ Create interactive queries (user-created searches)
---
-
-+ Analyze spatial information
---
-
-+ Edit data in maps
---
-
-+ Present the results of all these operations
-
----
-
-class:center,middle
-# Some More Key Concepts
++ Spatial database
 
 ---
 
@@ -707,142 +702,6 @@ class:center,middle
 
 ---
 
-# Basic Map Using QGIS
-![img-center-75](images/disd_elementary.png)
-
----
-
-# Points  
-[![img-left-30](images/point_feature.png)](http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview)
-
---
-
-![img-right-70](images/disd_elementary.png)
-
----
-
-# Lines
-[![img-left-30](images/polyline_feature.png)](http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview)
-
---
-
-![img-right-70](images/disd_elementary.png)
-
----
-
-# Polygons
-[![img-left-30](images/polygon_feature.png)](http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview)
-
---
-
-![img-right-70](images/disd_elementary.png)
-
----
-
-# QGIS Pro-tip
-![img-right-40](images/qgis-project-save.png)
-+ Save your project
---
-
-+ .red[QGIS doesn't autosave]
---
-
-+ .red[You will lose work when it crashes]
---
-
-
-![img-left-50](https://media.giphy.com/media/obbIystETz0Xu/giphy.gif)
-
-
-
----
-
-class: center, middle
-# What is our Map missing?
-
-![img-center-90](images/qgis-cd-styled.PNG)
-
----
-
-exclude:true
-# Base Maps
-![img-center-60](images/gis-layers.jpg)
-####Image Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Visual_Representation_of_Themes_in_a_GIS.jpg)
-
----
-
-# Base Maps
-![img-center-70](images/disd_elementary.png)
-
----
-
-# Base Maps
-
-+ Adding base maps will give your map context
---
-
-+ In QGIS, you need a plugin to use base maps
---
-
-+ There are several, but we're only going to use one of them
-
----
-
-# Loading Base Maps in QGIS
-+ From the Plugins menu, select "Manage and Install Plugins"
-
-![img-center-90](images/qgis-plugins-0.png)
-
----
-
-# Loading Base Maps in QGIS
-
-+ Search for the QuickMapServices plugin and install it
-
-![img-center-90](images/qgis-plugins-1.png)
-
----
-
-# Setting Up QuickMapServices
-+ Go to the Settings Menu
-![img-center-80](images/qgis-qms-0.png)
-
----
-
-# Setting Up QuickMapServices
-
-+ Get the contributed packs
-
-![img-center-70](images/qgis-qms-1.png)
-
----
-
-# Setting Up QuickMapServices
-
-+ Revel in all the beautiful base maps
-
-![img-left-45](https://media.giphy.com/media/3og0IuE1EjI5ZQzr3i/giphy.gif)
-![img-center-45](images/qgis-qms-2.png)
-
----
-
-class:center,middle
-# Raise Your Hand When You Have All the Basemaps
-
----
-
-# Loading Base Maps in QGIS
-+ Take a moment and select the base map you want to use
-
-![img-center-100](images/qgis-qms-3.png)
-
----
-
-# Loading Base Maps in QGIS
-![img-center-90](images/qgis-cd-basemap.PNG)
-
----
-       
 # Layer Ordering
 --
 
@@ -859,7 +718,7 @@ class:center,middle
 + We can filter the points based on the values in the attribute table
 
 ---
-        
+
 # Filter and Query
 + Right-click on the layer and select "Filter" to open the Query Builder
 
