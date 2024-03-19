@@ -1002,6 +1002,10 @@ class:center,middle
 name: c-block-start
 class: center,middle
 # Welcome Back!
+## Link to Today's Slides:
+## https://bit.ly/qgis-working-pro-day2
+## Link to Today's Workbook: 
+## https://bit.ly/qgis-working-pro-book2
 
 ---
 
@@ -1592,7 +1596,7 @@ class: center,middle
 ![img-center-80](images/dart_rail_buffer1.png)
 
 ---
-# Reproject Data
+# Try Buffer Again
 ![img-center-45](images/dart_rail_buffer2.png)
 + Click .orange[OK]
 
