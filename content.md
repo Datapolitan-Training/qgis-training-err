@@ -1038,13 +1038,13 @@ class:center, middle
 # How the Week is going to look
 --
 
-+ ~~.orange[Monday] - Introduction to QGIS, loading data, filtering, and selecting~~
++ ~~.orange[Monday] - Introduction to QGIS, loading data, filtering~~
 --
 
-+ .orange[Tuesday] - Projections, buffering features, spatial joins
++ .orange[Tuesday] - Selecting and buffering features, projections, and spatial joins
 --
 
-+ .orange[Wednesday] - Creating and editing features, validating geometries
++ .orange[Wednesday] - Creating and editing features, validating geometries, Print Composer
 --
 
 + .orange[Thursday] - Georeferencing and a "Bonus" section
@@ -1427,11 +1427,185 @@ class: center,middle
 ---
 
 # Let's try another buffer
+--
 
++ How many 311 service requests occur within 100 feet of DART Rail Lines?
+--
+
++ We'll need to first buffer the DART Rail Lines
+--
+
++ Then select the 311 Service Requests within the buffer
+
+---
+
+# Buffering DART Rail Lines
++ Select .orange[Vector] -> .orange[Geoprocessing Tools] -> .orange[Buffer]
+![img-center-48](images/dart_rail_buffer_fail1_box.png)
+
+---
+
+# Buffering DART Rail Lines
+![img-center-60](images/dart_rail_buffer_fail2.png)
+--
+
++ What happened?
+
+
+---
+# Projections
+--
+
++ Convert location on the 3-dimensional Earth (**latitude** and **longitude**) to coordinates on a 2-dimensional map
+--
+
++ A .orange[coordinate reference system] defines how the 2D map relates to the 3D spherical earth
+--
+
++ Can be tricky but it's necessary
+
+--
+
+![img-center-50](images/projections-orange.jpg)
+
+#### [Digital Coast Geozone](https://geozoneblog.wordpress.com/2012/05/22/happy-birthday-mercator/)
+
+---
+
+# Projections
++ Every projection distorts some part of your map
+
+![img-center-50](images/projections-faces.png)
+
+[FlowingData](http://flowingdata.com/2014/01/13/map-projections-illustrated-with-a-face/)
+
+---
+
+# Projections Matter
+--
+
++ These circles are all the same size on the globe:
+
+![img-center-50](images/projections-tissot-mercator.png)
+
+[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
+
+---
+
+# Projections Matter
++ As are these:
+
+![img-center-60](images/projections-tissot-mollweide.png)
+
+[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
+
+---
+
+# Projections Matter
++ And these:
+
+![img-center-50](images/projections-tissot-oblique-mercator.png)
+
+[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
+
+---
+
+# Projections Matter
+![img-center-90](images/projections.png)
+
+---
+
+# Projections
++ There are three main types of projections: a. cylindrical, b. conical, c. planar
+
+![img-center-55](https://docs.qgis.org/3.34/en/_images/projection_families.png)
+
+.caption[[Source](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/coordinate_reference_systems.html#figure-projection-families)]
+
+---
+
+# Mercator Projections
+--
+
++ A common map projection
+--
+
++ Makes geometries near poles look bigger than geometries near the equator
+--
+
+![img-center-50](images/mercator.gif)
+
+---
+
+# UTM Projections
++ Universal Transverse Mercator
++ Divides Earth's surface into 60 zones, giving each it's own plane
+
+![img-center-80](https://upload.wikimedia.org/wikipedia/commons/b/b7/Universal_Transverse_Mercator_zones.svg)
+.caption[By cmglee, STyx, Wikialine and Goran tek-en - World map nations.svg, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=84366980]
+
+---
+
+# Projections
+
++ For the most part we will work in **WGS 84** (latitude and longitude)
+--
+
++ Around DFW, we use a more accurate projection **Texas North Central State Plane**
+--
+
++ Make sure you know which you should be using
+
+---
+
+# Projections
++ Identified by unique IDs that make it easier to talk about them
+--
+
++ WGS 84 is referred to as **EPSG:4326**
+--
+
++ Texas North Central State Plane is referred to as **EPSG:2276**
+
+---
+
+# Map Units
+--
+
++ Each CRS has an associated map unit
+--
+
++ What do you think is the map unit for 4326?
+--
+
++ We can reproject our data into another CRS (with the right map units)
+
+---
+
+# Reproject Data
++ To reproject from one CRS to another, export the data using the CRS you want
+![img-center-55](images/qgis_export.png)
+
+---
+# Reproject Data
++ Select the CRS you want to use (may need to search if you aren't using it)
+![img-center-80](images/dart_rail_buffer1.png)
+
+---
+# Reproject Data
+![img-center-45](images/dart_rail_buffer2.png)
++ Click .orange[OK]
+
+---
+# Select by Location
+![img-center-50](images/dart_rail_buffer3.png)
+
+![img-center-100](images/dart_rail_buffer4_box.png)
 
 ---
 
 # Basic Spatial Joins
+--
 
 ![img-right-30](images/join1.png)
 
@@ -1509,160 +1683,31 @@ Style the resulting layer
 + Select .orange[OK]
 
 ---
-# Projections
+
+# SPatial join
 --
 
-+ Convert location on the 3-dimensional Earth (**latitude** and **longitude**) to coordinates on a 2-dimensional map
++ We were able to join with different CRSs
 --
 
-+ A .orange[coordinate reference system] defines how the 2D map relates to the 3D spherical earth
++ Sometimes the join will fail (return no results)
 --
 
-+ Can be tricky to understand, but it's necessary to understand
++ You'll need to reproject and then run the spatial join 
 
---
-
-![img-center-65](images/projections-orange.jpg)
-
-#### [Digital Coast Geozone](https://geozoneblog.wordpress.com/2012/05/22/happy-birthday-mercator/)
-
----
-
-# Projections
-+ There are three main types of projections
-![img-center-100](https://docs.qgis.org/3.34/en/_images/projection_families.png)
-
-.caption[[Source](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/coordinate_reference_systems.html#figure-projection-families)]
-
----
-
-# Projections
-+ Every projection distorts some part of your map
-
-![img-center-50](images/projections-faces.png)
-
-[FlowingData](http://flowingdata.com/2014/01/13/map-projections-illustrated-with-a-face/)
-
----
-
-# Mercator Projections
---
-
-+ A common map projection
---
-
-+ Makes geometries near poles look bigger than geometries near the equator
---
-
-![img-center-50](images/mercator.gif)
-
----
-
-# UTM Projections
-+ 
-
----
-
-# Projections Matter
---
-
-+ These circles are all the same size on the globe:
-
-![img-center-50](images/projections-tissot-mercator.png)
-
-[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
-
----
-
-# Projections Matter
-+ As are these:
-
-![img-center-60](images/projections-tissot-mollweide.png)
-
-[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
-
----
-
-# Projections Matter
-+ And these:
-
-![img-center-50](images/projections-tissot-oblique-mercator.png)
-
-[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
-
----
-
-# Projections Matter
-![img-center-90](images/projections.png)
-
----
-
-# Projections
-
-+ For the most part we will work in **WGS 84** (latitude and longitude)
---
-
-+ Around DFW, we use a more accurate projection **Texas North Central State Plane**
-![img-right-60](images/projections_NYSplane.png)
-
-###### Source: https://alidade.wikispaces.com/New+York+SPCS+Zones
----
-
-# Projections
-+ Identified by unique IDs that make it easier to talk about them
---
-
-+ WGS 84 is referred to as **EPSG:4326**
---
-
-+ Texas North Central State Plane is referred to as **EPSG:2276**
---
-
-
-## Remember these two & you should be set
-
----
-
-# Map Units
-
-
----
-
-# Basic Spatial Joins
-
-![img-right-30](images/join1.png)
-
---
-
-## Point to Polygon
-+ Relate points inside a polygon to that polygon (ex. count the number of points)
-
---
-
-## Polygon to Point 
-+ Points can take on value of enclosing polygon
-
----
-
-# spatial join easy 
-???
-(join 311 to council districts)
-
----
-
-# spatial join fail 
-???
-(something in Texas State plane)
 
 ---
 # Your Turn
++ Using your data, buffer and select on some features
++ Check the projection before hand and decide whether you need to reproject
++ Explain what you did and why
 ???
 Putting it all together
 
 ---
 
 # Homework
-+ Create something that involves a spatial join
++ Create something that involves a buffer and a selection
 + Show what you created and why you did it
 + Briefly describe how you did it
 
@@ -1673,6 +1718,16 @@ class:center,middle
 ---
 
 # Looking Ahead
+--
+
++ Creating and editing features
+--
+
++ Checking for valid geometries
+--
+
++ Print composer
+
 
 ---
 name: d-block-end
