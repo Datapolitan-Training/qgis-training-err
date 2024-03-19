@@ -1436,7 +1436,7 @@ class: center,middle
 + How many 311 service requests occur within 100 feet of DART Rail Lines?
 --
 
-+ We'll need to first buffer the DART Rail Lines
++ We'll need to first buffer the [DART Rail Lines](data/DART_Rail_Lines.zip)
 --
 
 + Then select the 311 Service Requests within the buffer
