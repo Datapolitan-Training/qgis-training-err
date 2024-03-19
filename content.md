@@ -1293,42 +1293,6 @@ class:center,middle
 
 ---
 
-# Your turn
---
-
-+ Pull up data from the Maroon Bells
---
-
-+ Try a .orange[Select Feature] expression or .orange[Select by Location]
---
-
-+ What are you trying to accomplish? 
---
-
-+ Did it work? 
-
----
-name: c-block-end
-class: center,middle
-
-# Wrap-up
-
----
-
-class:center,middle
-# 10 Min Break
-![img-center-50](images/sadtopographies/grumpy_lane.jpg)
-
-#### Source: <a href="https://www.instagram.com/p/Bo_W2MHB_Zp/" target="_blank">sadtopographies on Instagram</a>
-
----
-name: d-block-start
-class: center,middle
-
-# Welcome back
-
----
-
 # Buffering features
 --
 
@@ -1343,15 +1307,17 @@ class: center,middle
 ---
 
 # Let's Try It Now
-![img-right-45](images/dallas_bike_injuries_route_overview.png)
+![img-right-50](images/dallas_bike_injuries_route_overview.png)
 --
 
-+ Download this data of bicycle lanes
++ Download [this data of Dallas bicycle lanes](data/bikeroute.zip)
 --
 
-+ Download this data of bicyclist collisions
++ Download [this data of bicyclist collisions](data/2012-2024_DallasBicyclistInjuries.csv)
 --
 
+
+&nbsp;
 
 How many collisions happen on vs off bicycle lanes?
 
@@ -1424,6 +1390,125 @@ How many collisions happen on vs off bicycle lanes?
 
 ---
 
+# Your turn
+--
+
++ Pull up data from the Maroon Bells
+--
+
++ Try a .orange[Select Feature] expression or .orange[Select by Location]
+--
+
++ What are you trying to accomplish? 
+--
+
++ Did it work? 
+
+---
+name: c-block-end
+class: center,middle
+
+# Wrap-up
+
+---
+
+class:center,middle
+# 10 Min Break
+![img-center-50](images/sadtopographies/grumpy_lane.jpg)
+
+#### Source: <a href="https://www.instagram.com/p/Bo_W2MHB_Zp/" target="_blank">sadtopographies on Instagram</a>
+
+---
+name: d-block-start
+class: center,middle
+
+# Welcome back
+
+---
+
+# Let's try another buffer
+
+
+---
+
+# Basic Spatial Joins
+
+![img-right-30](images/join1.png)
+
+--
+
+## Point to Polygon
++ Relate points inside a polygon to that polygon (ex. count the number of points)
+
+--
+
+## Polygon to Point 
++ Points can take on value of enclosing polygon
+
+---
+
+class:center,middle
+# Let's Join some data
+
+---
+
+# Spatial Join
++ Aggregate the number of 311 Service Requests by Council District
+![img-center-65](images/dallas_311_choropleth.png)
+
+---
+
+# Spatial Join
+--
+
++ We will do a spatial join of 311 Service Requests (points) to the Council Districts (polygon)
+--
+
++ We will then style the result
+--
+
+
+![img-center-60](images/qgis_count_points_in_polygon.png)
+
+---
+
+# Spatial Join
+![img-right-48](images/dallas_311_spatial_join1.png)
+--
+
++ Select the .orange[Polygons] layer to join count
+--
+
++ Select the .orange[Points] layer to count from
+--
+
++ [Optional] Name the .orange[Count field name]
+--
+
++ [Optional] Save the result as a file or leave a temporary layer
+--
+
++ Click .orange[Run]
+
+---
+
+# Spatial Join
+Style the resulting layer 
+![img-right-60](images/dallas_311_spatial_join2.png)
+--
+
++ Select the .orange[Value]
+--
+
++ [Optional] Add text to the .orange[Legend format]
+--
+
++ Select .orange[Classify]
+--
+
++ Select .orange[OK]
+
+---
 # Projections
 --
 
