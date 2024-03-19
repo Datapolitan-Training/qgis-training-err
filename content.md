@@ -397,7 +397,7 @@ exclude:true
 + There are <a href="https://plugins.qgis.org/plugins/tags/basemap/?sort=-downloads" target=_blank>several</a>, but we're only going to use the most popular
 
 ---
-
+name:install-qms
 # Loading Base Maps in QGIS
 + From the Plugins menu, select .orange[**Manage and Install Plugins**]
 
@@ -810,128 +810,6 @@ class:center,middle
 
 ---
 
-# Select by Feature
---
-
-+ Sometimes we don't want to filter, but just select based on attributes
---
-
-+ We do this in the .orange[Attribute Table] (right click the layer and open)
---
-
-+ Click on the icon in the top left with the backward 3
---
-
-
-![img-center-100](images/dallas_311_sbf1_box.png)
-
-???
-(select noise complaints)
-
----
-
-# Select by Feature
---
-
-+ This will allow you to select by expression
---
-
-+ Select the .orange[Fields and Values]
---
-
-+ Select .orange[Service Request Type]
---
-
-![img-left-48](images/dallas_311_sbf2_box.png)
-![img-right-48](images/dallas_311_sbf3_box.png)
-
----
-
-# Select by Feature
---
-
-+ Add an .orange[=] sign to the expression
---
-
-+ Filter the values for .orange[Noise]
---
-
-+ Select .orange[Chronic Noise Complaint - DPD]
---
-
-![img-left-48](images/dallas_311_sbf4.png)
-![img-right-48](images/dallas_311_sbf5b.png)
-
---
-
-
-![img-center-50](images/dallas_311_sbf6.png)
-
----
-
-# Select by Feature
---
-
-+ Click .orange[Select Features]
---
-
-+ Check the top Attribute Table for the filtered row count
-![img-center-100](images/dallas_311_sbf7_box.png)
---
-
-+ Filter to .orange[Show Selected Features]
-![img-center-60](images/dallas_311_sbf8.png)
-
----
-
-# Select by Feature
-+ The yellow dots are the selected features
-
-![img-center-75](images/dallas_311_sbf10.png)
-
-
----
-# Select by Location
---
-
-+ Sometimes we want to select based on where the feature is on the map
---
-
-+ This helps when the spatial location isn't an attribute
---
-
-+ It also helps verify the attribute is accurate
---
-
-+ Let's practice this
-
----
-
-# Select by Location
---
-
-+ Select a council district from the .orange[Councils] layer
---
-
-+ Go to .orange[Vector] -> .orange[Research Tools] -> .orange[Select by Location]
-
-![img-center-50](images/dallas_311_sbl1.png)
-???
-(select complaints in district)
-
----
-# Select by Location
-+ Add the parameters for the select
-![img-center-100](images/dallas_311_sbl2_box.png)
-
----
-# Select by Location
-+ Turns out the feature isn't accurate
-
-![img-center-100](images/dallas_311_sbl3_box.png)
-
----
-
 # Exporting Data
 --
 
@@ -1112,6 +990,608 @@ class:center,middle
 name: b-block-end
 class: center, middle
 
+# Thank you!
+
+---
+class:center,middle
+
+# Lab Time 
+
+---
+
+name: c-block-start
+class: center,middle
+# Welcome Back!
+
+---
+
+# A Few Ground Rules
+???
++ Facilitators establish the intention we have for the culture of the classroom
+
+--
+
++ Be present (phone, email, social media, etc.)
+--
+
++ Be curious and ask questions
+--
+
++ Step up, step back
+--
+
++ One mic
+--
+
++ Respect multiple perspectives 
+--
+
++ Assume noble regard and positive intent
+
+---
+class:center, middle
+
+# Homework presentations
+
+---
+
+# How the Week is going to look
+--
+
++ ~~.orange[Monday] - Introduction to QGIS, loading data, filtering, and selecting~~
+--
+
++ .orange[Tuesday] - Projections, buffering features, spatial joins
+--
+
++ .orange[Wednesday] - Creating and editing features, validating geometries
+--
+
++ .orange[Thursday] - Georeferencing and a "Bonus" section
+
+---
+
+# Topics we covered yesterday
+--
+
++ What is a GIS and spatial data types (point, line, polygon)
+--
+
++ Adding data (shapefile, CSV, connecting to a database)
+--
+
++ Styling and labeling features
+--
+
++ Filtering data
+--
+
++ Exporting data
+
+---
+
+# Catching Up
+1. Download the [Dallas City Council Districts](data/dallas_council_districts.zip) and unzip the file
+2. Download the [Dallas 311 CSV file](data/20240101_20240229_dallas_311.csv) and load the data
+3. [Install the QuickMapServices plugin](#install-qms) and load the contributed packs
+
+---
+class:center,middle
+# What Do the new folks need to know about class?
+
+---
+
+# Topics for Today
+--
+
++ Select features by attribute and location
+--
+
++ Buffering and selecting features
+--
+
++ Projections and why they're important
+--
+
++ Spatial joins
+
+---
+
+# Filter and Query
++ We can filter the points based on the values in the attribute table
+
+![img-center-90](images/dallas_311_attribute_table.png)
+
+
+---
+
+# Filter and Query
++ Right-click on the layer and select .orange[Filter] to open the Query Builder
+
+![img-left-40](images/dallas_311_filter1.png)
+--
+![img-right-50](images/dallas_311_filter2.png)
+
+
+---
+class:center,middle
+# Selecting Features
+
+---
+
+# Why Do we Select Features?
+--
+
++ Inspect a particular features or group of features
+--
+
++ Create a subset of the data for export
+--
+
++ Selected features will be highlighted in the 
+
+---
+
+# Manual Selection
+--
+
++ Can select in the attribute table by clicking the feature
+--
+
++ Then select .orange[Show Selected Features]
+![img-center-45](images/qgis_select_attribute_table.png)
+--
+
++ Then right-click the layer to .orange[Zoom to Selection]
+--
+
+![img-right-35](images/qgis_zoom_to_selection.png)
+
+---
+class:center,middle
+# You can also select features on the map
+
+---
+
+# Manual Selection
++ Use options in .orange[Edit] -> .orange[Select]
+
+![img-center-80](images/qgis_select_menu.png)
+
+---
+
+# Manual Selection
+--
+
++ Or the toolbar
+![img-center-65](images/qgis_select_toolbar.png)
+--
+
++ .orange[Select Feature(s)] is the one I most commonly use
+
+---
+
+# Select by Feature
+--
+
++ Sometimes we don't want to filter, but just select based on attributes
+--
+
++ We do this in the .orange[Attribute Table] (right click the layer and open)
+--
+
++ Click on the icon in the top left with the <a href="https://en.wikipedia.org/wiki/Epsilon" target=_blank>backward 3</a>
+--
+
+
+![img-center-100](images/dallas_311_sbf1_box.png)
+
+???
+(select noise complaints)
+
+---
+
+# Select by Feature
+--
+
++ This will allow you to select by expression
+--
+
++ Select the .orange[Fields and Values]
+--
+
++ Select .orange[Service Request Type]
+--
+
+![img-left-48](images/dallas_311_sbf2_box.png)
+![img-right-48](images/dallas_311_sbf3_box.png)
+
+---
+
+# Select by Feature
+--
+
++ Add an .orange[=] sign to the expression
+--
+
++ Filter the values for .orange[Noise]
+--
+
++ Select .orange[Chronic Noise Complaint - DPD]
+--
+
+![img-left-48](images/dallas_311_sbf4.png)
+![img-right-48](images/dallas_311_sbf5b.png)
+
+--
+
+
+![img-center-50](images/dallas_311_sbf6.png)
+
+---
+
+# Select by Feature
+--
+
++ Click .orange[Select Features]
+--
+
++ Check the top Attribute Table for the filtered row count
+![img-center-100](images/dallas_311_sbf7_box.png)
+--
+
++ Filter to .orange[Show Selected Features]
+![img-center-60](images/dallas_311_sbf8.png)
+
+---
+
+# Select by Feature
++ The yellow dots are the selected features
+
+![img-center-75](images/dallas_311_sbf10.png)
+
+
+---
+# Select by Location
+--
+
++ Sometimes we want to select based on where the feature is on the map
+--
+
++ This helps when the spatial location isn't an attribute
+--
+
++ It also helps verify the attribute is accurate
+--
+
++ Let's practice this
+
+---
+
+# Select by Location
+--
+
++ Select a council district from the .orange[Councils] layer
+--
+
++ Go to .orange[Vector] -> .orange[Research Tools] -> .orange[Select by Location]
+
+![img-center-50](images/dallas_311_sbl1.png)
+???
+(select complaints in district)
+
+---
+# Select by Location
++ Add the parameters for the select
+![img-center-100](images/dallas_311_sbl2_box.png)
+
+---
+# Select by Location
++ Turns out the feature isn't accurate
+
+![img-center-100](images/dallas_311_sbl3_box.png)
+
+---
+
+# Your turn
+--
+
++ Pull up data from the Maroon Bells
+--
+
++ Try a .orange[Select Feature] expression or .orange[Select by Location]
+--
+
++ What are you trying to accomplish? 
+--
+
++ Did it work? 
+
+---
+name: c-block-end
+class: center,middle
+
+# Wrap-up
+
+---
+
+class:center,middle
+# 10 Min Break
+![img-center-50](images/sadtopographies/grumpy_lane.jpg)
+
+#### Source: <a href="https://www.instagram.com/p/Bo_W2MHB_Zp/" target="_blank">sadtopographies on Instagram</a>
+
+---
+name: d-block-start
+class: center,middle
+
+# Welcome back
+
+---
+
+# Buffering features
+--
+
++ Sometimes it's helpful to draw a buffer around features to do a selection
+--
+
++ Gives our points and lines some actual area (makes them more like polygons)
+--
+
++ This allows us to select features that are close in the real world, but not exactly aligned on the map
+
+---
+
+# Let's Try It Now
+![img-right-45](images/dallas_bike_injuries_route_overview.png)
+--
+
++ Download this data of bicycle lanes
+--
+
++ Download this data of bicyclist collisions
+--
+
+
+How many collisions happen on vs off bicycle lanes?
+
+---
+
+# Steps to Analyze
+--
+
+1. Create a 15ft buffer on the bicycle lanes
+--
+
+2. Select the collisions that fall within that buffer
+--
+
+3. Count the number of collisions vs the total number
+
+
+---
+
+# Create a 15ft buffer
++ Go to .orange[Vector] -> .orange[Geoprocessing Tools] -> .orange[Buffer...]
+
+![img-center-70](images/qgis_buffer.png)
+
+
+---
+
+# Create a 15ft buffer
++ Specify the .orange[Input layer], the .orange[Distance], and the output file (under .orange[Buffered])
+![img-center-60](images/dallas_bike_route_15ft_buffer1_box.png)
++ Click .orange[Run]
+
+---
+
+# Create a 15ft buffer
++ Notice the bike lanes now have a buffer around them
+
+![img-center-70](images/dallas_bike_route_15ft_buffer2.png)
+
+---
+
+# Steps to Analyze
+--
+
+1. ~~Create a 15ft buffer on the bicycle lanes~~
+2. Select the collisions that fall within that buffer
+3. Count the number of collisions vs the total number
+
+---
+
+# Select Collisions in the Buffer
+![img-center-65](images/dallas_bike_route_15ft_buffer3_box.png)
+
+---
+
+# Select Collisions in the Buffer
+![img-center-90](images/dallas_bike_route_15ft_buffer5.png)
+
+---
+
+# Steps to Analyze
+1. ~~Create a 15ft buffer on the bicycle lanes~~
+2. ~~Select the collisions that fall within that buffer~~
+3. Count the number of collisions vs the total number
+--
+
+
+![img-center-100](images/dallas_bike_route_15ft_buffer4_box.png)
+
+
+---
+
+# Projections
+--
+
++ Convert location on the 3-dimensional Earth (**latitude** and **longitude**) to coordinates on a 2-dimensional map
+--
+
++ A .orange[coordinate reference system] defines how the 2D map relates to the 3D spherical earth
+--
+
++ Can be tricky to understand, but it's necessary to understand
+
+--
+
+![img-center-65](images/projections-orange.jpg)
+
+#### [Digital Coast Geozone](https://geozoneblog.wordpress.com/2012/05/22/happy-birthday-mercator/)
+
+---
+
+# Projections
++ There are three main types of projections
+![img-center-100](https://docs.qgis.org/3.34/en/_images/projection_families.png)
+
+.caption[[Source](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/coordinate_reference_systems.html#figure-projection-families)]
+
+---
+
+# Projections
++ Every projection distorts some part of your map
+
+![img-center-50](images/projections-faces.png)
+
+[FlowingData](http://flowingdata.com/2014/01/13/map-projections-illustrated-with-a-face/)
+
+---
+
+# Mercator Projections
+--
+
++ A common map projection
+--
+
++ Makes geometries near poles look bigger than geometries near the equator
+--
+
+![img-center-50](images/mercator.gif)
+
+---
+
+# UTM Projections
++ 
+
+---
+
+# Projections Matter
+--
+
++ These circles are all the same size on the globe:
+
+![img-center-50](images/projections-tissot-mercator.png)
+
+[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
+
+---
+
+# Projections Matter
++ As are these:
+
+![img-center-60](images/projections-tissot-mollweide.png)
+
+[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
+
+---
+
+# Projections Matter
++ And these:
+
+![img-center-50](images/projections-tissot-oblique-mercator.png)
+
+[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
+
+---
+
+# Projections Matter
+![img-center-90](images/projections.png)
+
+---
+
+# Projections
+
++ For the most part we will work in **WGS 84** (latitude and longitude)
+--
+
++ Around DFW, we use a more accurate projection **Texas North Central State Plane**
+![img-right-60](images/projections_NYSplane.png)
+
+###### Source: https://alidade.wikispaces.com/New+York+SPCS+Zones
+---
+
+# Projections
++ Identified by unique IDs that make it easier to talk about them
+--
+
++ WGS 84 is referred to as **EPSG:4326**
+--
+
++ Texas North Central State Plane is referred to as **EPSG:2276**
+--
+
+
+## Remember these two & you should be set
+
+---
+
+# Map Units
+
+
+---
+
+# Basic Spatial Joins
+
+![img-right-30](images/join1.png)
+
+--
+
+## Point to Polygon
++ Relate points inside a polygon to that polygon (ex. count the number of points)
+
+--
+
+## Polygon to Point 
++ Points can take on value of enclosing polygon
+
+---
+
+# spatial join easy 
+???
+(join 311 to council districts)
+
+---
+
+# spatial join fail 
+???
+(something in Texas State plane)
+
+---
+# Your Turn
+???
+Putting it all together
+
+---
+
+# Homework
++ Create something that involves a spatial join
++ Show what you created and why you did it
++ Briefly describe how you did it
+
+---
+class:center,middle
+# Wrap-Up
+
+---
+
+# Looking Ahead
+
+---
+name: d-block-end
+class:center,middle
 # Thank you!
 
 ---
