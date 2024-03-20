@@ -1297,6 +1297,42 @@ class:center,middle
 
 ---
 
+# Your turn
+--
+
++ Pull up data from the Maroon Bells
+--
+
++ Try a .orange[Select Feature] expression or .orange[Select by Location]
+--
+
++ What are you trying to accomplish? 
+--
+
++ Did it work? 
+
+---
+name: c-block-end
+class: center,middle
+
+# Wrap-up
+
+---
+
+class:center,middle
+# 10 Min Break
+![img-center-50](images/sadtopographies/grumpy_lane.jpg)
+
+#### Source: <a href="https://www.instagram.com/p/Bo_W2MHB_Zp/" target="_blank">sadtopographies on Instagram</a>
+
+---
+name: d-block-start
+class: center,middle
+
+# Welcome back
+
+---
+
 # Buffering features
 --
 
@@ -1391,42 +1427,6 @@ How many collisions happen on vs off bicycle lanes?
 
 ![img-center-100](images/dallas_bike_route_15ft_buffer4_box.png)
 
-
----
-
-# Your turn
---
-
-+ Pull up data from the Maroon Bells
---
-
-+ Try a .orange[Select Feature] expression or .orange[Select by Location]
---
-
-+ What are you trying to accomplish? 
---
-
-+ Did it work? 
-
----
-name: c-block-end
-class: center,middle
-
-# Wrap-up
-
----
-
-class:center,middle
-# 10 Min Break
-![img-center-50](images/sadtopographies/grumpy_lane.jpg)
-
-#### Source: <a href="https://www.instagram.com/p/Bo_W2MHB_Zp/" target="_blank">sadtopographies on Instagram</a>
-
----
-name: d-block-start
-class: center,middle
-
-# Welcome back
 
 ---
 
@@ -1607,21 +1607,206 @@ class: center,middle
 ![img-center-100](images/dart_rail_buffer4_box.png)
 
 ---
+# Your Turn
++ Using your data, buffer and select on some features
++ Check the projection before hand and decide whether you need to reproject
++ Explain what you did and why
+???
+Putting it all together
 
-# Basic Spatial Joins
+---
+
+# Homework
++ Create something that involves a buffer and a selection
++ Show what you created and why you did it
++ Briefly describe how you did it
+
+---
+class:center,middle
+# Wrap-Up
+
+---
+
+# Looking Ahead
 --
 
-![img-right-30](images/join1.png)
++ Creating and editing features
+--
+
++ Checking for valid geometries
+--
+
++ Print composer
+
+
+---
+name: d-block-end
+class:center,middle
+# Thank you!
+
+---
+class:center,middle
+
+# Lab Time 
+
+---
+name: e-block-start
+class:center,middle
+
+# Welcome back!
+## Link to Today's Slides:
+## 
+## Link to Today's Workbook: 
+## 
+
+---
+
+# A Few Ground Rules
+???
++ Facilitators establish the intention we have for the culture of the classroom
 
 --
 
-## Point to Polygon
-+ Relate points inside a polygon to that polygon (ex. count the number of points)
-
++ Be present (phone, email, social media, etc.)
 --
 
-## Polygon to Point 
-+ Points can take on value of enclosing polygon
++ Be curious and ask questions
+--
+
++ Step up, step back
+--
+
++ One mic
+--
+
++ Respect multiple perspectives 
+--
+
++ Assume noble regard and positive intent
+
+---
+class:center, middle
+# Homework presentations
+
+---
+
+# How the Week is going to look
+--
+
++ ~~.orange[Monday] - Introduction to QGIS, loading data, filtering~~
+--
+
++ ~~.orange[Tuesday] - Selecting and buffering features, projections~~
+--
+
++ .orange[Wednesday] - Spatial joins and the Print Composer
+--
+
++ .orange[Thursday] - Creating and editing features, validating geometries, georeferencing, and (possibly) a "Bonus" section
+
+---
+
+# Topics we covered yesterday
+--
+
++ Manually selecting data
+--
+
++ Select by Feature
+--
+
++ Select by Location
+--
+
++ Buffering and select
+--
+
++ Projections
+
+---
+
+# Topics for Today
+--
+
++ Spatial Joins
+--
+
++ Print Composer
+
+---
+
+# Spatial Joins
+--
+
+![img-right-20](images/join1.png)
++ Allow us to relate data from different layers
+--
+
++ We join them by their location
+--
+
++ Can be done .orange[Point to Polygon]
+--
+
++ Can also be done .orange[Polygon to Point]
+--
+
+
+![img-left-48](images/qgis_count_points_in_polygon.png)
+--
+![img-right-48](images/qgis_join_attributes.png)
+
+---
+
+# Spatial Joins
+
+![img-center-50](images/qgis_count_points_in_polygon.png)
+--
+
++ A simple utility to count the points in a polygon
+--
+
++ Limited in options but easier to use
+
+---
+
+# Spatial Joins
+![img-center-50](images/qgis_join_attributes_summary_toolbox.png)
+--
+
++ Join summary of features in one layer to another
+--
+
++ Works like the .orange[Count Points in Polygon], but offers other functions (`sum`, `median`, etc.)
+--
+
++ Useful if you're counting points in a polygon or other features
+
+---
+
+# Spatial Joins
+
+![img-center-50](images/qgis_join_attributes_toolbox.png)
+--
+
++ Join feature from one layer to another
+--
+
++ Useful if you're joining an attribute from on feature to another (one to many)
+--
+
++ Especially polygon to point
+
+---
+
+# Spatial Joins
+![img-center-50](images/qgis_join_attributes_field_toolbox.png)
+--
+
++ Also possible to join by field value
+--
+
++ (Think `deal_id` or another unique identifier)
 
 ---
 
@@ -1631,15 +1816,13 @@ class:center,middle
 ---
 
 # Spatial Join
-+ Aggregate the number of 311 Service Requests by Council District
++ We'll aggregate the number of 311 Service Requests by Council District
 ![img-center-65](images/dallas_311_choropleth.png)
 
 ---
 
 # Spatial Join
---
-
-+ We will do a spatial join of 311 Service Requests (points) to the Council Districts (polygon)
++ We will do a spatial join of 311 Service Requests (points) to the Council Districts (polygon) using .orange[Count Points in Polygon]
 --
 
 + We will then style the result
@@ -1688,7 +1871,197 @@ Style the resulting layer
 
 ---
 
-# SPatial join
+# Spatial Join
++ We can do the same with the .orange[Join attributes by location (summary)]
+---
+
+# Spatial Join
++ Select the field to summarize (`Unique Key`)
+--
+
+![img-left-48](images/qgis_join_attr_location_count_box1.png)
+--
+![img-right-48](images/qgis_join_attr_location_field.png)
+
+---
+
+# Spatial Join
++ Select the function (`count`)
+--
+
+![img-left-48](images/qgis_join_attr_location_count_box2.png)
+--
+![img-right-50](images/qgis_join_attr_location_function.png)
+
+---
+
+# Spatial Join
++ The count of incidents will be the last column of the resulting attribute table
+
+![img-center-70](images/qgis_join_attr_location_result_box.png)
+
+---
+
+# Spatial Join
++ If you get a `null` result, check your geometric predicates
+
+![img-center-80](images/qgis_join_attr_location_result_null_box.png)
+
+
+---
+
+# Geometric Predicates
++ Remember these?
+
+![img-center-50](images/qgis_geometric_predicates.png)
+--
+
+
++ Let's break these down
+
+---
+
+# Geometric Predicates
+
+![img-center-43](https://docs.qgis.org/3.34/en/_images/selectbylocation.png)
+.caption[Source: https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/algs_include.html#geometric-predicates]
+
+.orange[Intersect] - Returns true if share any portion of space (circles 1, 2, and 3)
+
+---
+
+# Geometric Predicates
+
+![img-center-43](https://docs.qgis.org/3.34/en/_images/selectbylocation.png)
+.caption[Source: https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/algs_include.html#geometric-predicates]
+
+
+.orange[Contain] - Returns true if no points of b are outside of a (circle 1)
+
+???
+Returns 1 (true) if and only if no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a. In the picture, no circle is returned, but the rectangle would be if you would look for it the other way around, as it contains circle 1 completely. This is the opposite of are within.
+
+---
+
+# Geometric Predicates
+
+![img-center-43](https://docs.qgis.org/3.34/en/_images/selectbylocation.png)
+.caption[Source: https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/algs_include.html#geometric-predicates]
+
+
+.orange[Disjoint] - Returns true if geometries don't share any space (circle 4)
+
+
+---
+
+# Geometric Predicates
+
+![img-center-43](https://docs.qgis.org/3.34/en/_images/selectbylocation.png)
+.caption[Source: https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/algs_include.html#geometric-predicates]
+
+
+.orange[Equal] - Returns true if geometries are exactly the same (no circles)
+
+---
+
+# Geometric Predicates
+
+![img-center-43](https://docs.qgis.org/3.34/en/_images/selectbylocation.png)
+.caption[Source: https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/algs_include.html#geometric-predicates]
+
+
+.orange[Touch] - Returns true if the geometries have at least one point in common, but their interiors do not intersect (circle 3)
+
+---
+
+# Geometric Predicates
+
+![img-center-43](https://docs.qgis.org/3.34/en/_images/selectbylocation.png)
+.caption[Source: https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/algs_include.html#geometric-predicates]
+
+
+.orange[Overlap] - Returns true if the geometries share space but are not completely contained by each other (circle 2)
+
+---
+
+# Geometric Predicates
+
+![img-center-43](https://docs.qgis.org/3.34/en/_images/selectbylocation.png)
+.caption[Source: https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/algs_include.html#geometric-predicates]
+
+
+.orange[Are Within] - Returns true if geometry a is completely inside geometry b (circle 1)
++ Doesn't seem to work the way it should, [at least on Mac](https://gis.stackexchange.com/q/319328/16883)
+
+
+---
+
+# Geometric Predicates
+
+![img-center-43](https://docs.qgis.org/3.34/en/_images/selectbylocation.png)
+.caption[Source: https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/algs_include.html#geometric-predicates]
+
+
+.orange[Cross] - Returns true if the geometries have some, but not all, interior points in common & the actual crossing is a lower dimension than the highest supplied geometry (no circles)
+???
+For example, a line crossing a polygon will cross as a line (true). Two lines crossing will cross as a point (true). Two polygons cross as a polygon (false). In the picture, 
+
+---
+
+# Spatial Join
+--
+
++ We can do more than count
+--
+
++ Let's sum the total number of injuries and deaths for each council district
+
+---
+
+# Spatial Join
++ Select the fields to summarize
+![img-left-48](images/council_join_bicycle_injury_death_sum1.png)
+![img-right-48](images/council_join_bicycle_injury_death_sum_field.png)
+
+---
+
+# Spatial Join
++ Select the function to use (`sum`)
+![img-left-48](images/council_join_bicycle_injury_death_sum2.png)
+![img-right-48](images/council_join_bicycle_injury_death_sum_function.png)
+
+---
+
+# Spatial Join
+![img-center-100](images/council_join_bicycle_injury_death_sum_result.png)
+
+---
+
+# Spatial Join
++ Remember the bicyclist injuries didn't have council districts?
+--
+
++ We can use the .orange[Join attributes by location] to add that feature
+--
+
++ This will add an additional field with the council district
+
+???
++ Join the council district to the bicyclist injuries
+
+---
+# Join attributes by location
++ Select fields to add (`COUNCIL` & `DISTRICT`)
+![img-left-40](images/bicycle_injuries_join_cd1.png)
+![img-right-55](images/bicycle_injuries_join_cd2.png)
+
+---
+# Join attributes by location
+![img-center-100](images/bicycle_injuries_join_cd3.png)
+
+---
+
+# Spatial join
 --
 
 + We were able to join with different CRSs
@@ -1701,24 +2074,191 @@ Style the resulting layer
 
 
 ---
-# Your Turn
-+ Using your data, buffer and select on some features
-+ Check the projection before hand and decide whether you need to reproject
-+ Explain what you did and why
-???
-Putting it all together
+name: e-block-end
+class: center,middle
+# Wrap-Up
+
+---
+class:center,middle
+
+# 10-min Break
+![img-center-50](images/sadtopographies/cape_disappointment_lighthouse.png)
+
+.caption[Source: https://www.instagram.com/p/BPxXKKeg7nj/ ]
+
+---
+name: f-block-start
+class: center,middle
+# Welcome back!
+
+---
+
+class:center,middle
+# Types of Maps
+
+---
+
+# General Reference Maps
+
+--
+
++ Show important physical features of an area
+--
+
++ Include natural and man-made features
+--
+
++ Usually meant to help aid in the navigation or discovery of locations
+--
+
++ Usually fairly simple
+--
+
++ Can be stylized based on the intended audience (tourists vs locals)
+
+---
+
+class:center,middle
+![img-center-90](images/referencemap.png)
+
+##### Source: http://nationalmap.gov/small_scale/printable/reference.html
+---
+
+# Thematic Maps
+
+--
+
++ Focuses on a specific theme or subject area
+--
+
++ Features on the map represent the phenomenon being mapped
+--
+
++ Spatial features used for reference
+---
+
+![img-center-90](images/thematic1.png)
+##### Source: http://www.usna.usda.gov/Hardzone/ushzmap.html 
+
+---
+
+# Choropleth
+![img-center-70](images/choropleth.png)
+
+##### Source: http://www.geogalot.com/myp-humanities/year-9/understanding-hazards/003---choropleth-mapping
+
+---
+
+# Choropleth
+
+![img-center-90](images/floatingsheep-beer-church.jpg)
+
+##### Source: http://www.floatingsheep.org/2012/07/church-or-beer-americans-on-twitter.html
+
+---
+
+# Area Cartogram
+![img-center-55](images/Cartogram_US.png)
+
+.caption[Electoral Votes by State]
+##### Source: https://web.archive.org/web/20170125182411/http://training.fws.gov/courses/csp/csp7203/resources/Types_of_Maps_2013.pdf 
+
+---
+
+# Dorling Cartogram
+![img-center-90](images/dorling.png)
+
+.caption[Obesity by State]
+##### Source: http://homes.cs.washington.edu/~jheer//files/zoo/ 
+
+
+---
+
+# Print Composer
+--
+
++ How you make exportable and printable maps in QGIS
+--
+
++ Able to add map elements (legends, scales, text, etc)
+--
+
+![img-center-70](images/print_comp1.png)
+
+---
+
+# Create a new print composer
+
+![img-left-50](images/print_comp2.png)
+--
+![img-right-40](images/print_comp3.png)
+
+---
+
+# print composer
+## You are greeted with a blank slate
+
+![img-center-90](images/print_comp4.png)
+
+---
+
+# print composer
+## Add New Map adds to your current map
+![img-left-20](images/print_comp5_box.png)
+--
+![img-right-65](images/print_comp6.png)
+
+---
+
+# print composer
+## Customize item properties on the right
+
+![img-center-45](images/print_comp7.png)
+
+---
+
+# Print Composer
+## Don't forget a title and your sources
+
+![img-left-15](images/print_comp8_box.png)
+![img-right-80](images/print_comp9.png)
+
+---
+
+# Print Composer
+## Export options
+
+![img-center-50](images/print_comp10.png)
+
+---
+
+# Print Composer
+## You can share your map or print it
+![img-center-80](images/print_comp11.png)
+
+---
+
+# Print Composer 
+## Problems you might encounter
+--
+
++ Map extent -> "Use current map extent"
+--
+
++ Moving map around -> Adjust with arrows
+--
+
++ "North" arrow -> need to manually align
 
 ---
 
 # Homework
-+ Create something that involves a buffer and a selection
-+ Show what you created and why you did it
-+ Briefly describe how you did it
++ Using your data, make a map with the Print Composer
++ Try a spatial join as part of the data
 
 ---
 class:center,middle
-# Wrap-Up
-
+# Wrap-up
 ---
 
 # Looking Ahead
@@ -1727,20 +2267,23 @@ class:center,middle
 + Creating and editing features
 --
 
-+ Checking for valid geometries
++ Checking for validity
 --
 
-+ Print composer
++ Georeferencing images
+--
 
++ Anything else?
 
 ---
-name: d-block-end
-class:center,middle
+name: f-block-end
+class: center,middle
+
 # Thank you!
+
 
 ---
 class:center,middle
 
 # Lab Time 
-
 
