@@ -2189,7 +2189,7 @@ class:center,middle
 
 # Create a new print composer
 
-![img-left-50](images/print_comp2.png)
+![img-left-35](images/print_comp2.png)
 --
 ![img-right-40](images/print_comp3.png)
 
