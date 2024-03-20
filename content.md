@@ -1655,9 +1655,9 @@ class:center,middle
 
 # Welcome back!
 ## Link to Today's Slides:
-## 
+## https://bit.ly/qgis-working-pro-day3
 ## Link to Today's Workbook: 
-## 
+## https://bit.ly/qgis-working-pro-book3
 
 ---
 
