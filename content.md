@@ -2337,33 +2337,264 @@ class:center,middle
 + Heatmaps and Hexagonial Binning
 + Creating and Editing Features
 + Validating Geometries
++ Vector vs Raster
 + Georeferencing
 
 ---
 
-# creating and editing features
+# Heatmaps
+[![img-right-48](images/heatmap1.png)](https://blog.mapbox.com/new-york-city-taxi-trips-7ce80eb5c011)
++ One way of mapping density when you have many points
++ An alternative to choropleth maps if you want to show a little more nuance
 
 ---
 
+# Heatmaps in QGIS
++ Style the map using the Heatmap option
+![img-center-100](images/heatmap_style1.png)
+![img-center-100](images/heatmap_style2.png)
+
+---
+
+# Heatmaps in QGIS
++ Result
+![img-center-100](images/heatmap_style_result.png)
+
+
+---
+
+# Heatmaps in QGIS
++ Use .orange[Heatmap (Kernel Density Estimation)] script in the Processing Toolbox
+
+![img-center-70](images/heatmap_script1.png)
+--
+
++ Create a raster (image) showing the density of the points
+--
+
++ Style the raster
+--
+
+## Checkout [this tutorial](https://www.qgistutorials.com/en/docs/3/creating_heatmaps.html) if you want to create a heatmap in QGIS
+
+---
+
+# Heatmaps in QGIS
+
+![img-center-70](images/heatmap-menu.png)
+
+---
+
+# Heatmaps in QGIS
+
+![img-center-60](images/heatmap-dialog.png)
+
+---
+
+# Heatmaps in QGIS
+
+![img-center-100](images/heatmap-unstyled.png)
+
+---
+
+# Heatmaps in QGIS
+
+![img-center-80](images/heatmap-style.png)
+
+---
+
+# Heatmaps in QGIS
+
+![img-center-100](images/heatmap-styled.png)
+
+---
+
+# Why I don't like heatmaps
+![img-right-40](images/heatmap-styled_crop.png)
+--
+
++ Hard to make -> always adjusting the parameters
+--
+
++ Hard to explain -> what's the difference between color layers?
+--
+
++ Hard to say it's accurate -> just making it look pretty
+
+---
+
+# Hexagonal Binning
+--
+
++ Shows density of point features
+--
+
++ Accounts for points on top of each other
+--
+
++ Basically a spatial histogram
+--
+
++ Simple to use the .orange[Count Points in Polygon] function
+--
+
++ Use a graduated color styling to show the concentration of points
+
+---
+
+# Hexagonal Binning
+--
+
+1. Create a grid layer of hexagonal polygons
+--
+
+2. Count the points in each polygon
+--
+
+3. Style the result
+
+---
+
+# Hexagonal Binning
+--
+
++ We're going to create a density map of 311 requests
+--
+
++ Make sure you have the [Dallas 311 data](data/20240101_20240229_dallas_311.csv)
+--
+
+![img-center-50](images/dallas_311_hex_bin)
+
+---
+
+# Create the hexagon grid
++ .orange[Vector] -> .orange[Research Tools] -> .orange[Create grid...]
++ Select the bin size -> smaller is going to mean more processing time 
++ Might dilute the concentration
+
+---
+
+# Join the Points
++ .orange[Count Points in Polygon]
++ Works faster when the projections are the same
+
+---
+
+# Style the Result
++ Use a graduated color scale in .orange[Symbology]
+
+---
+
+# Your Turn
++ Do this with the [Dallas bicyclist injuries](data/2012-2024_DallasBicyclistsInjuries.csv)
++ You can reuse the hexagonal grid you created
++ Style the result to show the concentration
+
+---
+
+# Creating feature layer
++ Sometimes we need to create our own data
++ 
+
+---
+
+# Creating feature layer
++ You can easily create your own layer
++ Go to .orange[Layer] -> .orange[Create Layer]
++ Select the type of layer you want to create
+![img-center-100](images/create_layer.png)
+
+---
+
+# Create feature layer
++ Provide a .orange[File name]
++ Select .orange[File encoding]
++ Select the .orange[Geometry Type]
+![img-center-100](images/create_layer_geometry_type.png)
+
+---
+
+# Creating feature layer
++ Specify the attributes (`id` will be there by default)
+![img-center-100](images/create_layer_dialog_blank.png)
+
+---
+
+# Creating feature layer
++ Have to specify the data type for each feature
+![img-center-100](images/create_layer_datatypes.png)
+
+---
+
+# Creating feature layer
++ Use the Node tool to mark the vertices
++ When you're done, you'll need to add the attribute information
+
+---
+
+# Editing features
++ Sometimes we need to go in and adjust the features on a layer
++ We have to turn on editing
++ We can use the Node tool to edit the points
++ Save the result once you're done
++ And you can rollback changes if you make a mistake
+
+---
+
+# Digital Snapping
++ When 
+![img-center-100](images/snapping_settings.png)
+
+---
+
+
+
 # Valid geometries
++ To be valid, geometries must abide by certain rules
++ Anything that violates these rules is considered invalid
++ This prevents some algorithms from running properly
++ Here are <a href="https://support.safe.com/s/article/invalid-ogc-geometry-examples" target="_blank">some types of invalid geometries</a>
 
 ---
 
 # Checking for valid geometries
+
 
 ---
 
 # Fixing valid geometries
 --
 
-+ Georeferencing
---
++ QGIS has a .orange[Fix geometries]
 
-+ Your topics of interest
+![img-center-100](images/fix_geometries.png)
+
+
+
+---
+
+# Types of Layers
++ .orange[Vector] - 
++ .orange[Raster]
 
 ---
 
 # Georeferencing
++ Process of taking a digital image and providing geographic information so it can be mapped
++ Usually using satellite or aerial imagery
++ Can also georeference images of maps ([plat maps](https://en.wikipedia.org/wiki/Plat), surveys, etc.)
++ Process of plotting known points on the image for QGIS to use in calculating the other points
++ Result is a raster map just like our base maps
+
+---
+# Georeferencing in QGIS
++ Go to .orange[Layer] -> .orange[Georeferencer]
+![img-center-100](images/georeferencer.png)
+
+---
+
+# Let's turn back the clock 
 
 ---
 
@@ -2391,8 +2622,47 @@ class:center,middle
 # Wrap-up
 
 ---
-
+class: center,middle
 # Resources
+
+---
+
+# GIS Stack Exchange
+
+![img-center-90](images/gis-stackexchange.png)
+
+[GIS Stack Exchange](http://gis.stackexchange.com/)
+
+---
+
+# Learning QGIS
+
+![img-center-40](images/learning-qgis.png)
+
+[Learning QGIS](https://www.packtpub.com/application-development/learning-qgis-20)
+
+---
+
+# Discover QGIS 3.x
+![img-center-100](images/discover_qgis.png)
+
+[Discover QGIS 3.x](https://locatepress.com/book/dq32)
+
+
+---
+
+# QGIS Map Design
+
+![img-center-40](images/qgis-map-design.png)
+
+[QGIS Map Design](https://locatepress.com/book/qmd2)
+
+---
+
+# Other Documentation
++ [QGIS online manual Gentle GIS Introduction](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/)
++ [QGIS Tutorials and Tips](https://www.qgistutorials.com/en/index.html)
++ [Free and Open Source GIS Ramblings](https://anitagraser.com/)
 
 ---
 
