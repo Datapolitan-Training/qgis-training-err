@@ -2739,6 +2739,19 @@ class:center,middle
 + Otherwise you have to manually edit the vertices
 
 ---
+
+# Your Turn
+--
+
++ Download [this file](data/Structures.zip) and run the validity checker on it
+--
+
++ Identify the invalid geometries and fix them
+--
+
++ What were the errors and what did you need to do in order to fix them?
+
+---
 name: g-block-end
 class:center,middle
 # Wrap-up
