@@ -2924,6 +2924,46 @@ class:center,middle
 # Wrap-up
 
 ---
+
+# Some things we didn't get to
+--
+
++ [Geocoding addresses](https://guides.library.ucsc.edu/DS/Resources/QGIS)
+--
+
++ Normalizing data for choropleths ([see this video](https://www.youtube.com/watch?v=t1RvSxNcafU))
+--
+
++ [Automating map creation using Atlas](https://docs.qgis.org/3.34/en/docs/training_manual/forestry/forest_maps.html#ls-creating-detailed-maps-with-the-atlas-tool)
+--
+
++ [Working with PostGIS SQL](https://postgis.net/workshops/postgis-intro/)
+--
+
++ [Automating work with Python](https://docs.qgis.org/3.34/en/docs/user_manual/plugins/python_console.html#console)
+
+---
+
+# formats we haven't covered
++ JSON (used in online services)
+
+![img-center-100](images/json.png)
+
+---
+
+# formats we haven't covered
+![img-right-45](images/geojson_rev.png)
++ GeoJSON (used in online services with locations to be mapped)
++ For more information see Eric Brelsford's [GeoJSON and Github tutorial](http://youtu.be/TQs7fYo9d_M)
+
+---
+
+# formats we haven't covered
++ XML (Google Earth's native data format)
+
+![img-center-100](images/xml.png)
+
+---
 class: center,middle
 # Resources
 
@@ -2946,7 +2986,7 @@ class: center,middle
 ---
 
 # Discover QGIS 3.x
-![img-center-100](images/discover_qgis.png)
+![img-center-40](images/discover_qgis.png)
 
 [Discover QGIS 3.x](https://locatepress.com/book/dq32)
 
@@ -2968,6 +3008,25 @@ class: center,middle
 
 ---
 
+# Reminders
+--
+
++ Know your layer CRS
+--
+
++ When in doubt, zoom in and then zoom out
+--
+
++ If you’re working with a CSV file and run into an error, export as a shapefile and try it again
+--
+
++ Save your project often
+--
+
++ Choose good file names
+
+---
+
 # Final Thoughts
 --
 
@@ -2977,7 +3036,7 @@ class: center,middle
 + There's always more to know
 --
 
-+ And then the next version will change everything on you
+<br>(And then the next version will change everything on you)
 --
 
 + Manage your data well and you'll be happier
