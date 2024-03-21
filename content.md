@@ -2596,7 +2596,7 @@ class:center,middle
 
 ---
 
-# Create feature layer
+# Creating feature layer
 --
 
 + Provide a .orange[File name]
