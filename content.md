@@ -2338,78 +2338,73 @@ class:center,middle
 ---
 
 # Topics for Today
+--
+
 + Heatmaps and Hexagonial Binning
+--
+
 + Creating and Editing Features
+--
+
 + Validating Geometries
+--
+
 + Vector vs Raster
+--
+
 + Georeferencing
 
 ---
 
 # Heatmaps
 ![img-right-48](images/citibike_suggestions.png)
+--
+
 + One way of mapping density when you have many points
+--
+
 + An alternative to choropleth maps if you want to show a little more nuance
 
 ---
 
 # Heatmaps in QGIS
+--
+
 + Style the map using the Heatmap option
-![img-center-100](images/heatmap_style1.png)
-![img-center-100](images/heatmap_style2.png)
+--
+
+![img-center-40](images/heatmap_style1.png)
+--
+
+
+![img-center-80](images/heatmap_style2.png)
 
 ---
 
 # Heatmaps in QGIS
-+ Result
-![img-center-100](images/heatmap_style_result.png)
++ Result for Dallas 311 data
+![img-center-55](images/heatmap_style_result.png)
 
 
 ---
 
-# Heatmaps in QGIS
-+ Use .orange[Heatmap (Kernel Density Estimation)] script in the Processing Toolbox
+# Heatmaps in QGIS (Alternative)
+--
+
+1. Use .orange[Heatmap (Kernel Density Estimation)] script in the Processing Toolbox
+--
 
 ![img-center-70](images/heatmap_script1.png)
 --
 
-+ Create a raster (image) showing the density of the points
+2. Create a raster (image) showing the density of the points
 --
 
-+ Style the raster
+3. Style the raster
 --
 
-## Checkout [this tutorial](https://www.qgistutorials.com/en/docs/3/creating_heatmaps.html) if you want to create a heatmap in QGIS
 
----
-
-# Heatmaps in QGIS
-
-![img-center-70](images/heatmap-menu.png)
-
----
-
-# Heatmaps in QGIS
-
-![img-center-60](images/heatmap-dialog.png)
-
----
-
-# Heatmaps in QGIS
-
-![img-center-100](images/heatmap-unstyled.png)
-
----
-
-# Heatmaps in QGIS
-
-![img-center-80](images/heatmap-style.png)
-
----
-
-# Heatmaps in QGIS
-
-![img-center-100](images/heatmap-styled.png)
+## Checkout [this tutorial](https://www.qgistutorials.com/en/docs/3/creating_heatmaps.html) on heatmaps
 
 ---
 
@@ -2479,25 +2474,64 @@ class:center,middle
 + Make sure you have the [Dallas 311 data](data/20240101_20240229_dallas_311.csv)
 --
 
-![img-center-50](images/dallas_311_hex_bin)
+
+![img-center-65](images/dallas_311_hex_bin.png)
 
 ---
 
 # Create the hexagon grid
+--
+
 + .orange[Vector] -> .orange[Research Tools] -> .orange[Create grid...]
+--
+
+![img-center-70](images/create_grid.png)
+
+---
+
+# Create the hexagon grid
+--
+
+![img-right-48](images/create_grid_dialog.png)
 + Select the bin size -> smaller is going to mean more processing time 
+--
+
 + Might dilute the concentration
+--
+
++ I chose 1000 feet
+
+
+---
+
+# Create the hexagon grid
+
+![img-center-100](images/1000ft_hex_grid.png)
 
 ---
 
 # Join the Points
+--
+
 + .orange[Count Points in Polygon]
+--
+
 + Works faster when the projections are the same
+--
+
++ Mine took 38 minutes to generate to join
 
 ---
 
 # Style the Result
 + Use a graduated color scale in .orange[Symbology]
+
+![img-center-85](images/hex_bin_styling.png)
+
+---
+
+# Style the Result
+![img-center-60](images/dallas_311_hex_bin_result.png)
 
 ---
 
@@ -2508,72 +2542,185 @@ class:center,middle
 
 ---
 
-# Creating feature layer
+# Creating and Editing Data
+--
+
 + Sometimes we need to create our own data
-+ 
+--
+
++ Sometimes we need to fix the data of others
+--
+
++ We do this using the editing features
+--
+
+
+![img-center-80](images/editing_toolbar1.png)
+--
+
+
+![img-center-80](images/editing_toolbar2.png)
+
+---
+
+# Let's Create Some Data
+--
+
++ Find a satellite basemap layer
+--
+
++ Zoom in on our location here
+--
+
++ We're going to map the building footprints using satellite imagery
+--
+
++ We'll check your geometry at the end to make sure you did it right
 
 ---
 
 # Creating feature layer
+--
+
 + You can easily create your own layer
+--
+
 + Go to .orange[Layer] -> .orange[Create Layer]
+--
+
 + Select the type of layer you want to create
+--
+
+
 ![img-center-100](images/create_layer.png)
 
 ---
 
 # Create feature layer
+--
+
 + Provide a .orange[File name]
+--
+
 + Select .orange[File encoding]
+--
+
 + Select the .orange[Geometry Type]
-![img-center-100](images/create_layer_geometry_type.png)
+--
+
+
+![img-center-70](images/create_layer_geometry_type.png)
+--
+
++ We'll be using .orange[Polygon]
 
 ---
 
 # Creating feature layer
+--
+
+![img-right-48](images/create_layer_dialog_blank.png)
+--
+
 + Specify the attributes (`id` will be there by default)
-![img-center-100](images/create_layer_dialog_blank.png)
+--
+
++ Think about what attributes you want to use for your data
 
 ---
 
 # Creating feature layer
+--
+![img-right-40](images/create_layer_datatypes.png)
+
 + Have to specify the data type for each feature
-![img-center-100](images/create_layer_datatypes.png)
+--
+
++ Not all numbers need to be `Integer`
+--
+
++ ZIP Codes are a good example of this
+--
+
++ Numbers can be `Text` too
 
 ---
 
 # Creating feature layer
-+ Use the Node tool to mark the vertices
+--
+
++ Click .orange[Add Polygon Feature]
+![img-center-50](images/add_polygon_feature.png)
+--
+
++ Use the .orange[Vertex Tool] to mark the vertices
+![img-center-70](images/node_detail.png)
+--
+
 + When you're done, you'll need to add the attribute information
 
 ---
 
 # Editing features
+--
+
 + Sometimes we need to go in and adjust the features on a layer
+--
+
 + We have to turn on editing
-+ We can use the Node tool to edit the points
+--
+
++ We can use the .orange[Vertex Tool] to edit the points
+--
+
 + Save the result once you're done
+--
+
 + And you can rollback changes if you make a mistake
 
 ---
 
 # Digital Snapping
-+ When 
-![img-center-100](images/snapping_settings.png)
+--
+
++ When you're creating lines that you want to butt against each other, snapping can help
+--
+
++ QGIS will automatically snap them to each other
+--
+
++ You can turn on and configure this in .orange[Settings] -> .orange[Options...] -> .orange[Digitizing]
+
+![img-center-80](images/snapping_settings.png)
 
 ---
 
-
-
 # Valid geometries
+--
+
 + To be valid, geometries must abide by certain rules
+--
+
 + Anything that violates these rules is considered invalid
+--
+
 + This prevents some algorithms from running properly
+--
+
 + Here are <a href="https://support.safe.com/s/article/invalid-ogc-geometry-examples" target="_blank">some types of invalid geometries</a>
 
 ---
 
 # Checking for valid geometries
++ Go to .orange[Vector] -> .orange[Geometry Tools] -> .orange[Check Validity]
+
+![img-center-60](images/check_validity_menu.png)
+
+---
+
+# Checking for valid geometries
++ Put your layer into the .orange[Input layer] and see if your geometries are valid
+![img-center-45](images/check_validity_dialog.png)
 
 
 ---
@@ -2581,54 +2728,181 @@ class:center,middle
 # Fixing valid geometries
 --
 
-+ QGIS has a .orange[Fix geometries]
++ QGIS has a .orange[Fix geometries] function
 
-![img-center-100](images/fix_geometries.png)
+![img-center-50](images/fix_geometries.png)
+--
 
++ This will take care of minor issues
+--
 
-
----
-
-# Types of Layers
-+ .orange[Vector] - 
-+ .orange[Raster]
-
----
-
-# Georeferencing
-+ Process of taking a digital image and providing geographic information so it can be mapped
-+ Usually using satellite or aerial imagery
-+ Can also georeference images of maps ([plat maps](https://en.wikipedia.org/wiki/Plat), surveys, etc.)
-+ Process of plotting known points on the image for QGIS to use in calculating the other points
-+ Result is a raster map just like our base maps
-
----
-# Georeferencing in QGIS
-+ Go to .orange[Layer] -> .orange[Georeferencer]
-![img-center-100](images/georeferencer.png)
-
----
-
-# Let's turn back the clock 
-
----
-
-# Your Turn
++ Otherwise you have to manually edit the vertices
 
 ---
 name: g-block-end
 class:center,middle
 # Wrap-up
 
---- 
+---
 class:center,middle
 # 10-Minute Break
+![img-center-50](images/sadtopographies/agony_island.png)
+
+.caption[Source: https://www.instagram.com/p/BgFrJ8OlRbE/]
 
 ---
 name: h-block-start
 class:middle,center
 
 # Welcome Back!
+
+---
+
+# Types of Layers
+--
+
++ .orange[Vector] - Collection of coordinates (x,y,z) that represent points on the map
+--
+
++ .orange[Raster] - Matrix of pixels that covers the whole earth with some value (think basemap)
+--
+
++ The features we've been working with have been vectors
+--
+
++ A heatmap is a type of raster
+--
+
++ So is what we're about to talk about 
+
+---
+
+# Georeferencing
+--
+
++ Process of taking a digital image and providing geographic information so it can be mapped
+--
+
++ Usually using satellite or aerial imagery
+--
+
++ Can also georeference images of maps ([plat maps](https://en.wikipedia.org/wiki/Plat), surveys, etc.)
+--
+
++ Process of plotting known points on the image for QGIS to use in calculating the other points
+--
+
++ Result is a raster map just like our base maps
+
+---
+
+# Key things to keep in mind
+--
+
++ More points are better than fewer
+--
+
++ Good points are better than bad ones
+--
+
++ Try to get at least 4 points
+--
+
++ I try to spread them around the image
+--
+
++ Any other pointers?
+
+---
+
+# Let's turn back the clock
+--
+
+![img-right-35](images/smu_fairchild_aerial.jpeg)
++ [Click to download this aerial image from 1930](images/DMP040b_Unlabeled.tiff)
+--
+
++ This is part of an aerial survey done by Fairchild Aerial Surveys, Inc.
+--
+
++ Image is available thanks to Foscue Map Collection, SMU Libraries
+--
+
++ We're going to make this a base map
+
+---
+
+# Quick Tip
+--
+
++ Have satellite imagery up as your basemap
+--
+
++ Also add Google Labels so you have the street names handy on top of the imagery
+
+---
+# Georeferencing in QGIS
++ Go to .orange[Layer] -> .orange[Georeferencer]
+![img-center-70](images/georeferencer.png)
+
+---
+
+# Georeferencing in QGIS
+![img-center-55](images/georeferencer_window1.png)
+--
+
++ Click on the .orange[Open raster...] button (top left)
+--
+
++ Navigate to the image you downloaded
+
+---
+
+# Georeferencing in QGIS
+--
+
++ Click .orange[Add point] and click on a reference feature where you have coordinates
+--
+
++ A new window will come up to enter the coordinates
+--
+
+![img-center-45](images/georeferencer_enter_map_coordinates.png)
+--
+
++ Click .orange[From Map Canvas] to be taken to your QGIS window
+
+---
+
+# Georeferencing in QGIS
+--
+
++ These points (called ground control points) will appear in the pane at the bottom
+--
+
++ The `Residual` lets you know how much error there is
+--
+
+![img-center-50](images/georeferencer_points_example.png)
+--
+
++ Try to keep this low
+
+---
+
+# Georeferencing in QGIS
+--
+
++ Once you're done, click the .orange[Start Georeferencing] button (green triangle)
+--
+
++ This will run the operation to map georeference the image and load it into QGIS
+
+---
+
+# Your Turn
++ [Click to download this image](images/dallas-texas-census-enumeration_districts-1940-5.jpeg) and run .orange[Georeferencer] on it
++ What is different about georeferencing this image?
 
 ---
 name: h-block-end
@@ -2682,15 +2956,27 @@ class: center,middle
 ---
 
 # Final Thoughts
+--
+
++ Practice what you've learned
+--
+
++ There's always more to know
+--
+
++ And then the next version will change everything on you
+--
+
++ Manage your data well and you'll be happier
+--
+
++ Continue the collaboration and cooperation and you'll be just fine
 
 ---
 
 # Contact Information
 + [Email me](mailto:richard[at]datapolitan[dot]com)
-+ Check out [my website](https://wwww.datapolitan.com)
-+ Connect on [Twitter](https://twitter.com/Datapolitan)
 + Connect on [LinkedIn](https://www.linkedin.com/in/richarddunks/)
-+ Follow us on [Instagram](https://www.instagram.com/datapolitan/)
 
 ---
 
