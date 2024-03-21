@@ -3002,8 +3002,14 @@ class: center,middle
 ---
 
 # Other Documentation
+--
+
 + [QGIS online manual Gentle GIS Introduction](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/)
+--
+
 + [QGIS Tutorials and Tips](https://www.qgistutorials.com/en/index.html)
+--
+
 + [Free and Open Source GIS Ramblings](https://anitagraser.com/)
 
 ---
