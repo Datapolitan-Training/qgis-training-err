@@ -2343,7 +2343,7 @@ class:center,middle
 ---
 
 # Heatmaps
-[![img-right-48](images/heatmap1.png)](https://blog.mapbox.com/new-york-city-taxi-trips-7ce80eb5c011)
+![img-right-48](images/citibike_suggestions.png)
 + One way of mapping density when you have many points
 + An alternative to choropleth maps if you want to show a little more nuance
 
@@ -2420,6 +2420,17 @@ class:center,middle
 --
 
 + Hard to say it's accurate -> just making it look pretty
+
+---
+
+# Some Examples of What I Mean
+![img-center-100](images/heatmap2.png)
+
+
+---
+
+# Some Examples of What I Mean
+![img-center-100](images/heatmap3.png)
 
 ---
 
