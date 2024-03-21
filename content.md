@@ -1132,7 +1132,7 @@ class:center,middle
 + Create a subset of the data for export
 --
 
-+ Selected features will be highlighted in the 
++ Selected features will be highlighted in the Attribute Table
 
 ---
 
@@ -2286,4 +2286,131 @@ class: center,middle
 class:center,middle
 
 # Lab Time 
+
+---
+
+name: g-block-start
+class: center,middle
+# Welcome back!
+
+---
+
+# A Few Ground Rules
+???
++ Facilitators establish the intention we have for the culture of the classroom
+
+--
+
++ Be present (phone, email, social media, etc.)
+--
+
++ Be curious and ask questions
+--
+
++ Step up, step back
+--
+
++ One mic
+--
+
++ Respect multiple perspectives 
+--
+
++ Assume noble regard and positive intent
+
+---
+class:center,middle
+# Homework presentations
+
+---
+
+# Topics We Covered Yesterday
+--
+
++ Spatial Joins
+--
+
++ Print Composer
+---
+
+# Topics for Today
++ Heatmaps and Hexagonial Binning
++ Creating and Editing Features
++ Validating Geometries
++ Georeferencing
+
+---
+
+# creating and editing features
+
+---
+
+# Valid geometries
+
+---
+
+# Checking for valid geometries
+
+---
+
+# Fixing valid geometries
+--
+
++ Georeferencing
+--
+
++ Your topics of interest
+
+---
+
+# Georeferencing
+
+---
+
+# Your Turn
+
+---
+name: g-block-end
+class:center,middle
+# Wrap-up
+
+--- 
+class:center,middle
+# 10-Minute Break
+
+---
+name: h-block-start
+class:middle,center
+
+# Welcome Back!
+
+---
+name: h-block-end
+class:center,middle
+
+# Wrap-up
+
+---
+
+# Resources
+
+---
+
+# Final Thoughts
+
+---
+
+# Contact Information
++ [Email me](mailto:richard[at]datapolitan[dot]com)
++ Check out [my website](https://wwww.datapolitan.com)
++ Connect on [Twitter](https://twitter.com/Datapolitan)
++ Connect on [LinkedIn](https://www.linkedin.com/in/richarddunks/)
++ Follow us on [Instagram](https://www.instagram.com/datapolitan/)
+
+---
+
+class:middle,center
+# Thank You!
+
+
 
