@@ -2911,6 +2911,8 @@ class:middle,center
 
 + This will run the operation to map georeference the image and load it into QGIS
 
+???
+Issues with Georeferencer: https://gis.stackexchange.com/questions/169882/qgis-georeferencer-failing-to-compute-transform
 ---
 
 # Your Turn
