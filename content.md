@@ -908,7 +908,7 @@ class:center,middle
 # Your Turn
 --
 
-+ Working in your pairs, select a dataset (maybe `active rigs`)
++ Working in your pairs, select a dataset
 --
 
 + Select points by both feature and location
@@ -1300,7 +1300,7 @@ class:center,middle
 # Your turn
 --
 
-+ Pull up data from the Maroon Bells
++ Select data from your dataset
 --
 
 + Try a .orange[Select Feature] expression or .orange[Select by Location]
