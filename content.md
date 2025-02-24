@@ -139,20 +139,20 @@ class:center,middle
 + 1-hour open lab after our session is over for questions and additional help
 
 ---
-
-# How the Week is going to look
+name: day1-overview
+# How the Class is going to go
 --
 
-+ .orange[Monday] - Introduction to QGIS, loading data, filtering, and selecting
++ [Day 1](#day1) - Introduction to QGIS, loading data, and filtering
 --
 
-+ .orange[Tuesday] - Projections, buffering features, spatial joins
++ [Day 2](#day2) - Selecting and buffering features, projections
 --
 
-+ .orange[Wednesday] - Creating and editing features, validating geometries
++ [Day 3](#day3) - Spatial joins and the Print Composer
 --
 
-+ .orange[Thursday] - Georeferencing and a "Bonus" section
++ [Day 4](#day4) - Heatmaps and Hexagonial Binning, Creating and Editing Features, and Georeferencing
 
 ---
 
@@ -190,6 +190,7 @@ At the end of this week, you will:
 + This is also an opportunity to help your colleagues
 
 ---
+name: day1
 
 # Topics for Today
 --
@@ -1038,20 +1039,12 @@ class:center, middle
 # Homework presentations
 
 ---
-
-# How the Week is going to look
---
-
-+ ~~.orange[Monday] - Introduction to QGIS, loading data, filtering~~
---
-
-+ .orange[Tuesday] - Selecting and buffering features, projections, and spatial joins
---
-
-+ .orange[Wednesday] - Creating and editing features, validating geometries, Print Composer
---
-
-+ .orange[Thursday] - Georeferencing and a "Bonus" section
+name: day2-overview
+# How the Class is going to go
++ ~~[Day 1](#day1) - Introduction to QGIS, loading data, and filtering~~
++ [Day 2](#day2) - Selecting and buffering features, projections
++ [Day 3](#day3) - Spatial joins and the Print Composer
++ [Day 4](#day4) - Heatmaps and Hexagonial Binning, Creating and Editing Features, and Georeferencing
 
 ---
 
@@ -1084,6 +1077,7 @@ class:center,middle
 # What Do the new folks need to know about class?
 
 ---
+name: day2
 
 # Topics for Today
 --
@@ -1092,12 +1086,7 @@ class:center,middle
 --
 
 + Buffering and selecting features
---
 
-+ Projections and why they're important
---
-
-+ Spatial joins
 
 ---
 
@@ -1630,10 +1619,7 @@ class:center,middle
 # Looking Ahead
 --
 
-+ Creating and editing features
---
-
-+ Checking for valid geometries
++ Spatial joins
 --
 
 + Print composer
@@ -1689,20 +1675,12 @@ class:center, middle
 # Homework presentations
 
 ---
-
-# How the Week is going to look
---
-
-+ ~~.orange[Monday] - Introduction to QGIS, loading data, filtering~~
---
-
-+ ~~.orange[Tuesday] - Selecting and buffering features, projections~~
---
-
-+ .orange[Wednesday] - Spatial joins and the Print Composer
---
-
-+ .orange[Thursday] - Creating and editing features, validating geometries, georeferencing, and (possibly) a "Bonus" section
+name: day3-overview
+# How the Class is going to go
++ ~~[Day 1](#day1) - Introduction to QGIS, loading data, and filtering~~
++ ~~[Day 2](#day2) - Selecting and buffering features, projections~~
++ [Day 3](#day3) - Spatial joins and the Print Composer
++ [Day 4](#day4) - Heatmaps and Hexagonial Binning, Creating and Editing Features, and Georeferencing
 
 ---
 
@@ -1724,6 +1702,7 @@ class:center, middle
 + Projections
 
 ---
+name: day3
 
 # Topics for Today
 --
@@ -2323,8 +2302,17 @@ class: center,middle
 + Assume noble regard and positive intent
 
 ---
-class:center,middle
+class:center, middle
+
 # Homework presentations
+
+---
+name: day4-overview
+# How the Class is going to go
++ ~~[Day 1](#day1) - Introduction to QGIS, loading data, and filtering~~
++ ~~[Day 2](#day2) - Selecting and buffering features, projections~~
++ ~~[Day 3](#day3) - Spatial joins and the Print Composer~~
++ [Day 4](#day4) - Heatmaps and Hexagonial Binning, Creating and Editing Features, and Georeferencing
 
 ---
 
@@ -2335,7 +2323,9 @@ class:center,middle
 --
 
 + Print Composer
+
 ---
+name: day4
 
 # Topics for Today
 --
