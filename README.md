@@ -39,8 +39,6 @@ At the conclusion of the training, participants will:
 + Georeferencing images
 
 # Data Sources 
-+ [National Archives](https://catalog.archives.gov/id/5839625?objectPage=5) (1940 Census Map)
-+ [TxDOT Crash Records Information System](https://cris.dot.state.tx.us/public/Query/app/home) (Bicyclist Collisions) 
 + [City of Dallas GIS Services](https://egis.dallascityhall.com/resources/shapefileDownload.aspx)
 	+ [Dallas-area Parcels](https://egis.dallascityhall.com/resources/Downloads/ShpZip/Parcel.zip) 
 	+ [Dallas-area Structures (Building Footprints)](https://egis.dallascityhall.com/resources/Downloads/ShpZip/Structures.zip) 
@@ -50,3 +48,6 @@ At the conclusion of the training, participants will:
 	+ [On Street Bike Routes](https://egis.dallascityhall.com/resources/Downloads/ShpZip/Pbw/bikeroute.zip)
 + [City of Dallas Open Data Portal](https://www.dallasopendata.com/)
 	+ [311 Service Requests](https://www.dallasopendata.com/Services/311-Service-Requests-October-1-2020-to-Present/d7e7-envw/about_data)
++ [TxDOT Crash Records Information System](https://cris.dot.state.tx.us/public/Query/app/home) (Bicyclist Collisions) 
++ [SMU Libraries 1930 Fairchild Survey](https://www.smu.edu/libraries/digitalcollections/dmp) [Grid 040](https://digitalcollections.smu.edu/digital/collection/dmp/id/130)
++ [National Archives 1940 Census Enumeration District Maps](https://catalog.archives.gov/id/5839625?objectPage=5)
