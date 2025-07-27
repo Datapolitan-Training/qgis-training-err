@@ -133,9 +133,6 @@ class:center,middle
 + "Peer Mapping" -> Work in pairs with one person driving
 --
 
-+ "Homework" -> A 10-15 minute task to demo the next day
---
-
 + 1-hour open lab after our session is over for questions and additional help
 
 ---
@@ -918,19 +915,11 @@ class:center,middle
 + See if they agree or if there's a discrepancy
 
 ---
-
+exclude: true
 # Homework
---
-
 + Create and style a basic map with data from the database
---
-
 + Play around with the styles and labels
---
-
 + Have fun and explore features
---
-
 + You can show the live map or export it to a PNG to demo
 
 ---
