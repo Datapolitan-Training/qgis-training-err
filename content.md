@@ -395,7 +395,7 @@ exclude:true
 + In QGIS, you need a plugin to use base maps
 --
 
-+ There are <a href="https://plugins.qgis.org/plugins/tags/basemap/?sort=-downloads" target=_blank>several</a>, but we're only going to use the most popular
++ There are <a href="https://plugins.qgis.org/plugins/tags/basemap/?sort=downloads&order=desc" target=_blank>several</a>, but we're only going to use the most popular
 
 ---
 name:install-qms
