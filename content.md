@@ -989,7 +989,7 @@ class:center,middle
 
 ---
 
-name: c-block-start
+name: day2
 class: center,middle
 # Welcome Back!
 ## Link to Today's Slides:
@@ -1021,11 +1021,6 @@ class: center,middle
 --
 
 + Assume noble regard and positive intent
-
----
-class:center, middle
-
-# Homework presentations
 
 ---
 name: day2-overview
@@ -1066,7 +1061,6 @@ class:center,middle
 # What Do the new folks need to know about class?
 
 ---
-name: day2
 
 # Topics for Today
 --
@@ -1594,6 +1588,7 @@ Putting it all together
 
 ---
 
+exclude: true
 # Homework
 + Create something that involves a buffer and a selection
 + Show what you created and why you did it
@@ -1660,6 +1655,8 @@ class:center,middle
 + Assume noble regard and positive intent
 
 ---
+
+exclude: true
 class:center, middle
 # Homework presentations
 
@@ -2219,7 +2216,7 @@ class:center,middle
 + "North" arrow -> need to manually align
 
 ---
-
+exclude: true
 # Homework
 + Using your data, make a map with the Print Composer
 + Try a spatial join as part of the data
@@ -2291,6 +2288,7 @@ class: center,middle
 + Assume noble regard and positive intent
 
 ---
+exclude: true
 class:center, middle
 
 # Homework presentations
