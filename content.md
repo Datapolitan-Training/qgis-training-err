@@ -937,10 +937,10 @@ class:center,middle
 
 ![img-center-90](images/gis-stackexchange.png)
 
-[GIS Stack Exchange](http://gis.stackexchange.com/)
+<a href="https://gis.stackexchange.com/?tags=qgis" target="_blank">GIS Stack Exchange</a>
 
 ---
-
+exclude:true
 # Learning QGIS
 
 ![img-center-40](images/learning-qgis.png)
@@ -949,17 +949,31 @@ class:center,middle
 
 ---
 
+# Discover QGIS 3.x
+![img-center-40](images/discover_qgis.png)
+
+<a href="https://locatepress.com/book/dq32"b target="_blank">Discover QGIS 3.x</a>
+
+
+---
+
 # QGIS Map Design
 
-![img-center-40](images/qgis-map-design.png)
+![img-center-40](images/qgis-map-design2.png)
 
-[QGIS Map Design](https://locatepress.com/book/qmd2)
+<a href="https://locatepress.com/book/qmd2" target="_blank">QGIS Map Design</a>
 
 ---
 
 # Other Documentation
-+ [QGIS online manual Gentle GIS Introduction](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/)
+--
+
++ [QGIS online manual Gentle GIS Introduction](https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/index.html)
+--
+
 + [QGIS Tutorials and Tips](https://www.qgistutorials.com/en/index.html)
+--
+
 + [Free and Open Source GIS Ramblings](https://anitagraser.com/)
 
 ---
@@ -2952,10 +2966,10 @@ class: center,middle
 
 ![img-center-90](images/gis-stackexchange.png)
 
-[GIS Stack Exchange](http://gis.stackexchange.com/)
+<a href="https://gis.stackexchange.com/?tags=qgis" target="_blank">GIS Stack Exchange</a>
 
 ---
-
+exclude:true
 # Learning QGIS
 
 ![img-center-40](images/learning-qgis.png)
@@ -2967,23 +2981,23 @@ class: center,middle
 # Discover QGIS 3.x
 ![img-center-40](images/discover_qgis.png)
 
-[Discover QGIS 3.x](https://locatepress.com/book/dq32)
+<a href="https://locatepress.com/book/dq32"b target="_blank">Discover QGIS 3.x</a>
 
 
 ---
 
 # QGIS Map Design
 
-![img-center-40](images/qgis-map-design.png)
+![img-center-40](images/qgis-map-design2.png)
 
-[QGIS Map Design](https://locatepress.com/book/qmd2)
+<a href="https://locatepress.com/book/qmd2" target="_blank">QGIS Map Design</a>
 
 ---
 
 # Other Documentation
 --
 
-+ [QGIS online manual Gentle GIS Introduction](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/)
++ [QGIS online manual Gentle GIS Introduction](https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/index.html)
 --
 
 + [QGIS Tutorials and Tips](https://www.qgistutorials.com/en/index.html)
