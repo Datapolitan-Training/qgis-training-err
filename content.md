@@ -143,13 +143,13 @@ name: day1-overview
 + [Day 1](#day1) - Introduction to QGIS, loading data, and filtering
 --
 
-+ [Day 2](#day2) - Selecting and buffering features, projections
++ [Day 2](#c-block-start) - Selecting and buffering features, projections
 --
 
-+ [Day 3](#day3) - Spatial joins and the Print Composer
++ [Day 3](#e-block-start) - Spatial joins and the Print Composer
 --
 
-+ [Day 4](#day4) - Heatmaps and Hexagonial Binning, Creating and Editing Features, and Georeferencing
++ [Day 4](#g-block-start) - Heatmaps and Hexagonial Binning, Creating and Editing Features, and Georeferencing
 
 ---
 
@@ -1003,7 +1003,7 @@ class:center,middle
 
 ---
 
-name: day2
+name: c-block-start
 class: center,middle
 # Welcome Back!
 ## Link to Today's Slides:
@@ -1040,9 +1040,9 @@ class: center,middle
 name: day2-overview
 # How the Class is going to go
 + ~~[Day 1](#day1) - Introduction to QGIS, loading data, and filtering~~
-+ [Day 2](#day2) - Selecting and buffering features, projections
-+ [Day 3](#day3) - Spatial joins and the Print Composer
-+ [Day 4](#day4) - Heatmaps and Hexagonial Binning, Creating and Editing Features, and Georeferencing
++ [Day 2](#c-block-start) - Selecting and buffering features, projections
++ [Day 3](#e-block-start) - Spatial joins and the Print Composer
++ [Day 4](#g-block-start) - Heatmaps and Hexagonial Binning, Creating and Editing Features, and Georeferencing
 
 ---
 
@@ -1675,7 +1675,7 @@ class:center, middle
 # Homework presentations
 
 ---
-name: day3-overview
+name: e-block-start
 # How the Class is going to go
 + ~~[Day 1](#day1) - Introduction to QGIS, loading data, and filtering~~
 + ~~[Day 2](#day2) - Selecting and buffering features, projections~~
@@ -2311,9 +2311,9 @@ class:center, middle
 name: day4-overview
 # How the Class is going to go
 + ~~[Day 1](#day1) - Introduction to QGIS, loading data, and filtering~~
-+ ~~[Day 2](#day2) - Selecting and buffering features, projections~~
-+ ~~[Day 3](#day3) - Spatial joins and the Print Composer~~
-+ [Day 4](#day4) - Heatmaps and Hexagonial Binning, Creating and Editing Features, and Georeferencing
++ ~~[Day 2](#c-block-start) - Selecting and buffering features, projections~~
++ ~~[Day 3](#e-block-start) - Spatial joins and the Print Composer~~
++ [Day 4](#g-block-start) - Heatmaps and Hexagonial Binning, Creating and Editing Features, and Georeferencing
 
 ---
 
