@@ -1008,8 +1008,8 @@ class: center,middle
 # Welcome Back!
 ## Link to Today's Slides:
 ## https://bit.ly/qgis-working-pro-day2
-## Link to Today's Workbook: 
-## https://bit.ly/qgis-working-pro-book2
+<!-- ## Link to Today's Workbook: 
+## https://bit.ly/qgis-working-pro-book2 -->
 
 ---
 
