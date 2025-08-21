@@ -2510,7 +2510,7 @@ name: day4
 + Works faster when the projections are the same
 --
 
-+ Mine took 38 minutes to generate to join
++ Mine took 90 seconds to join
 
 ---
 
@@ -2927,13 +2927,16 @@ class:center,middle
 + Normalizing data for choropleths ([see this video](https://www.youtube.com/watch?v=t1RvSxNcafU))
 --
 
-+ [Automating map creation using Atlas](https://docs.qgis.org/3.34/en/docs/training_manual/forestry/forest_maps.html#ls-creating-detailed-maps-with-the-atlas-tool)
++ [Automating map creation using Atlas](https://docs.qgis.org/3.40/en/docs/training_manual/forestry/forest_maps.html)
 --
 
-+ [Working with PostGIS SQL](https://postgis.net/workshops/postgis-intro/)
++ [Working with PostGIS SQL](https://postgis.net/workshops/postgis-intro/) using [DB Manager](https://docs.qgis.org/3.40/en/docs/training_manual/databases/db_manager.html)
 --
 
 + [Automating work with Python](https://docs.qgis.org/3.34/en/docs/user_manual/plugins/python_console.html#console)
+--
+
++ [Using AI to program QGIS](https://x.com/jjsantoso/status/1900293848271667395) with [QGIS-MCP](https://github.com/jjsantos01/qgis_mcp)
 
 ---
 
@@ -3047,7 +3050,7 @@ exclude:true
 
 # Contact Information
 + [Email me](mailto:richard[at]datapolitan[dot]com)
-+ Connect on [LinkedIn](https://www.linkedin.com/in/richarddunks/)
++ Connect on [LinkedIn](https://www.linkedin.com/in/richarddunks/) and leave me a review!
 
 ---
 

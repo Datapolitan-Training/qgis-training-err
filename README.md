@@ -51,3 +51,4 @@ At the conclusion of the training, participants will:
 + [TxDOT Crash Records Information System](https://cris.dot.state.tx.us/public/Query/app/home) (Bicyclist Collisions) 
 + [SMU Libraries 1930 Fairchild Survey](https://www.smu.edu/libraries/digitalcollections/dmp) [Grid 040](https://digitalcollections.smu.edu/digital/collection/dmp/id/130)
 + [National Archives 1940 Census Enumeration District Maps](https://catalog.archives.gov/id/5839625?objectPage=5)
++ [NM Oil and Gas Data Hub](https://ocd-hub-nm-emnrd.hub.arcgis.com/search)
